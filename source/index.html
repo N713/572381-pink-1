@@ -3,10 +3,240 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <nav class="page-navigation">
+        <ul class="page-navigation__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link site-list__logo" href="#"><img src="http://placehold.it/150x40" alt="Логотип"></a>
+          </li>
+          <li class="site-list__item">
+            <button class="site-list__button">
+              <span class="site-list__burger"></span>
+            </button>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
+      <img src="http://placehold.it/150x40" alt="Фото приложения">
+      <section class="download-section">
+        <p class="download-section__paragraph">Взгляните на жизнь иначе!</p>
+        <a class="download-section__link" href="#">Скачать приложение</a>
+        <ul class="download-section__list store-list">
+          <li class="store-list__item">
+            <a class="store-list__link" href="https://www.apple.com/ru/">app-store</a>
+          </li>
+          <li class="store-list__item">
+            <a class="store-list__link" href="https://play.google.com/store">play-market</a>
+          </li>
+          <li class="store-list__item">
+            <a class="store-list__link" href="https://www.microsoft.com/ru-ru/store/b/home">ms-store</a>
+          </li>
+        </ul>
+        <p class="download-section__paragraph download-section__paragraph--available">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </section>
+    </header>
+    <main>
+      <div class="offer">
+        <p class="offer__paragraph">Устали от серости мегаполиса?</p>
+        <p class="offer__paragraph offer__paragraph--second">Нам есть, что вам предложить!</p>
+      </div>
+      <section class="advantages">
+        <h2 class="advantages__head">Преимущества</h2>
+        <ul class="advantages__advantages-list advantage-list">
+          <li class="advantage-list__item">
+            <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
+            <h3 class="advantage-list__title">
+              Поднимает настроение
+            </h3>
+            <p class="advantage-list__description">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="advantage-list__item">
+            <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
+            <h3 class="advantage-list__title">
+              Меняет мир вокруг
+            </h3>
+            <p class="advantage-list__description">
+              Сделайте снимок и<br class="advantage-list__description-br"> украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="advantage-list__item">
+            <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
+            <h3 class="advantage-list__title">
+              Заводит новых друзей
+            </h3>
+            <p class="advantage-list__description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="british-scientists">
+        <img class="british-scientists__image" src="http://placehold.it/150x40" alt="24 часа">
+        <div class="british-scientists__wrapper">
+          <h3 class="british-scientists__head">Эффект на 24 часа!</h3>
+          <p class="british-scientists__paragraph">
+            Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a class="british-scientists__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
+      <section class="reviews">
+        <span class="reviews__quotes">Кавычки</span>
+        <p class="reviews__main-review">
+          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+        </p>
+        <h3 class="reviews__name">Николай Петров</h3>
+        <p class="reviews__profession">25 лет, водитель трамвая</p>
+        <div class="rewiews__buttons bullet-buttons">
+          <button class="bullet-buttons__bullet bullet-buttons__bullet--arrow-left">1</button>
+          <button class="bullet-buttons__bullet">2</button>
+          <button class="bullet-buttons__bullet bullet-buttons__bullet--arrow-right">3</button>
+        </div>
+      </section>
+      <section class="using-plan">
+        <div class="using-plan__wrapper table">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <ul class="table__row">
+            <li class="table__cell table__cell--empty"></li>
+            <li class="table__cell table__cell--head">
+              <span class="table__plan-name">база</span>
+              <span class="table__plan-price">1,99 usd</span>
+            </li>
+            <li class="table__cell table__cell--head table__cell--hit">
+              <span class="table__plan-name">стандарт</span>
+              <span class="table__plan-price">3,99 usd</span>
+            </li>
+            <li class="table__cell table__cell--head">
+              <span class="table__plan-name">анлим</span>
+              <span class="table__plan-price">9,99 usd</span>
+            </li>
+          </ul>
+          <ul class="table__row">
+            <li сlass="table__cell">
+              <span class="table__row-name">Розовый фильтр</span>
+            </li>
+            <li сlass="table__cell">
+              <span class="table__feature-name">Розовый фильтр</span>
+              <img class="table__feature-availability" src="img src="http://placehold.it/20x20" alt="Да">
+            </li>
+            <li сlass="table__cell">
+              <span class="table__feature-name">Розовый фильтр</span>
+              <img class="table__feature-availability" src="img src="http://placehold.it/20x20" alt="Да">
+            </li>
+            <li сlass="table__cell">
+              <span class="table__feature-name">Розовый фильтр</span>
+              <img class="table__feature-availability" src="img src="http://placehold.it/20x20" alt="Да">
+            </li>
+          </ul>
+          <ul class="table__row">
+            <li сlass="table__cell">
+              <span class="table__row-name">Смайлики</span>
+            </li>
+            <li сlass="table__cell">
+              <span class="table__feature-name">Смайлики</span>
+              <img class="table__feature-availability" src="img src="http://placehold.it/20x20" alt="Нет">
+            </li>
+            <li сlass="table__cell">
+              <span class="table__feature-name">Смайлики</span>
+              <img class="table__feature-availability" src="img src="http://placehold.it/20x20" alt="Да">
+            </li>
+            <li сlass="table__cell">
+              <span class="table__feature-name">Смайлики</span>
+              <img class="table__feature-availability" src="img src="http://placehold.it/20x20" alt="Да">
+            </li>
+          </ul>
+          <ul class="table__row">
+            <li сlass="table__cell">
+              <span class="table__row-name">Комментарии</span>
+            </li>
+            <li сlass="table__cell">
+              <span class="table__feature-name">Комментарии</span>
+              <img class="table__feature-availability" src="img src="http://placehold.it/20x20" alt="Нет">
+            </li>
+            <li сlass="table__cell">
+              <span class="table__feature-name">Комментарии</span>
+              <img class="table__feature-availability" src="img src="http://placehold.it/20x20" alt="Нет">
+            </li>
+            <li сlass="table__cell">
+              <span class="table__feature-name">Комментарии</span>
+              <img class="table__feature-availability" src="img src="http://placehold.it/20x20" alt="Да">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__paragraph">Остались вопросы?</p>
+        <p class="contacts__paragraph">Свяжитесь с нами!</p>
+        <ul class="contacts__list contact-list">
+          <li class="contact-list__item contact-list__item--call">
+            <b class="contact-list__item-name">
+              Звоните:
+            </b>
+            <p class="contact-list__item-info">
+              +7 (812) 555-66-66
+            </p>
+          </li>
+          <li class="contact-list__item contact-list__item--write">
+            <b class="contact-list__item-name">
+              Пишите:
+            </b>
+            <p class="contact-list__item-info">
+              mail@htmlacademy.ru
+            </p>
+          </li>
+          <li class="contact-list__item contact-list__item--go">
+            <b class="contact-list__item-name">
+              Приезжайте в гости:
+            </b>
+            <p class="contact-list__item-info">
+              ул. Большая Конюшенная, 19/8
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <img src="http://placehold.it/300x300" alt="Карта">
+      </section>
+      <div class="page-footer-wrapper">
+        <footer class="page-footer">
+          <div class="page-footer__logo">
+            <a class="page-footer__logo-name" href="#">
+              <img src="http://placehold.it/100x50" alt="Логотип">
+              Pink
+            </a>
+          </div>
+          <ul class="page-footer__socials-list social-list">
+            <li class="social-list__item"><a class="social-twitter" href="#">twitter</a></li>
+            <li class="social-list__item"><a class="social-facebook" href="#">facebook</a></li>
+            <li class="social-list__item"><a class="social-youtube" href="#">youtube</a></li>
+          </ul>
+          <div class="page-footer__developer">
+            <span class="page-footer__developed">Разработано</span>
+            <a class="page-footer__developer-logo" href="#">htmlacademy logo</a>
+          </div>
+        </footer>
+      </div>
+    </main>
   </body>
 </html>
