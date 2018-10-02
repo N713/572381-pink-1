@@ -106,11 +106,24 @@
         </p>
         <h3 class="reviews__name">Николай Петров</h3>
         <p class="reviews__profession">25 лет, водитель трамвая</p>
-        <div class="rewiews__buttons bullet-buttons">
-          <button class="bullet-buttons__bullet bullet-buttons__bullet--arrow-left">1</button>
-          <button class="bullet-buttons__bullet">2</button>
-          <button class="bullet-buttons__bullet bullet-buttons__bullet--arrow-right">3</button>
+        <div class="rewiews__arrows arrow-button">
+          <button class="arrow-button__right"><</button>
+          <button class="arrow-button__left">></button>
         </div>
+        <ul class="reviews__bullets slider">
+          <li class="slider__item">
+            <input class="slider__item-bullet" type="radio" name="bullet" id="1">
+            <label class="slider__item-label" for="1">1</label>
+          </li>
+          <li class="slider__item">
+            <input class="slider__item-bullet" type="radio" name="bullet" id="2">
+            <label class="slider__item-label" for="2">2</label>
+          </li>
+          <li class="slider__item">
+            <input class="slider__item-bullet" type="radio" name="bullet" id="3">
+            <label class="slider__item-label" for="3">3</label>
+          </li>
+        </ul>
       </section>
       <section class="using-plan">
         <div class="using-plan__wrapper table">
