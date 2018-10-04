@@ -1,0 +1,16 @@
+.offer {
+  padding-top: 46px;
+}
+
+.offer__paragraph {
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #283645;
+  @include marpad;
+  margin-bottom: 30px;
+}

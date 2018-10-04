@@ -1,0 +1,14 @@
+.site-list {
+  list-style: none;
+  border: 1px solid yellow;
+  background-color: #283645;
+  @include marpad;
+}
+
+.site-list-item {
+  display: flex;
+}
+
+.site-list__link {
+  color: #ffffff;
+}
