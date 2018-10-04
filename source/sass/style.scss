@@ -28,6 +28,8 @@
 @import "blocks/photos";
 @import "blocks/tool-list";
 @import "blocks/visually-hidden";
+@import "blocks/using-plan";
+@import "blocks/contact-list";
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
@@ -59,7 +61,9 @@ $layout-width-desktop: 1200px;
   }
 }
 
+/*
 body {
   width: $layout-width-mobile;
   border: 1px solid red;
 }
+*/

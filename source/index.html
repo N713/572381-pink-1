@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="page-navigation">
         <ul class="page-navigation__list site-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--burger">
             <a class="site-list__link site-list__logo" href="#"><img src="http://placehold.it/150x40" alt="Логотип"></a>
             <button class="site-list__button">
               <span class="site-list__burger"></span>
@@ -64,7 +64,7 @@
         <p class="offer__paragraph offer__paragraph--second">Нам есть, что вам предложить!</p>
       </div>
       <section class="advantages">
-        <h2 class="advantages__head">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__advantages-list advantage-list">
           <li class="advantage-list__item">
             <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
@@ -207,8 +207,10 @@
       </section>
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__paragraph">Остались вопросы?</p>
-        <p class="contacts__paragraph">Свяжитесь с нами!</p>
+        <div class="contacts__wrapper">
+          <p class="contacts__paragraph">Остались вопросы?</p>
+          <p class="contacts__paragraph">Свяжитесь с нами!</p>
+        </div>
         <ul class="contacts__list contact-list">
           <li class="contact-list__item contact-list__item--call">
             <b class="contact-list__item-name">
@@ -240,25 +242,23 @@
         <h2 class="visually-hidden">Карта</h2>
         <img src="http://placehold.it/300x300" alt="Карта">
       </section>
-      <div class="page-footer-wrapper">
-        <footer class="page-footer">
-          <div class="page-footer__logo">
-            <a class="page-footer__logo-name" href="#">
-              <img src="http://placehold.it/100x50" alt="Логотип">
+      <footer class="page-footer">
+        <div class="page-footer__logo">
+          <a class="page-footer__logo-name" href="#">
+            <img src="http://placehold.it/100x50" alt="Логотип">
               Pink
-            </a>
-          </div>
-          <ul class="page-footer__socials-list social-list">
-            <li class="social-list__item"><a class="social-twitter" href="#">twitter</a></li>
-            <li class="social-list__item"><a class="social-facebook" href="#">facebook</a></li>
-            <li class="social-list__item"><a class="social-youtube" href="#">youtube</a></li>
-          </ul>
-          <div class="page-footer__developer">
-            <span class="page-footer__developed">Разработано</span>
-            <a class="page-footer__developer-logo" href="#">htmlacademy logo</a>
-          </div>
-        </footer>
-      </div>
+          </a>
+        </div>
+        <ul class="page-footer__socials-list social-list">
+          <li class="social-list__item"><a class="social-twitter" href="#">twitter</a></li>
+          <li class="social-list__item"><a class="social-facebook" href="#">facebook</a></li>
+          <li class="social-list__item"><a class="social-youtube" href="#">youtube</a></li>
+        </ul>
+        <div class="page-footer__developer">
+          <span class="page-footer__developed">Разработано</span>
+          <a class="page-footer__developer-logo" href="#">htmlacademy logo</a>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
