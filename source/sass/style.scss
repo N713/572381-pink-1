@@ -1,6 +1,7 @@
 @import "fonts";
-@import "blocks/svg";
 @import "blocks/mixin";
+@import "blocks/variables";
+@import "blocks/svg";
 @import "blocks/advantage-list";
 @import "blocks/advantages";
 @import "blocks/arrow-button";
@@ -35,30 +36,24 @@
 body {
   font-family: "Open Sans", "Arial", sans-serif;
   margin: 0 auto;
+  outline: 1px solid #283645;
 }
-
-$layout-width-mobile: 320px;
-$layout-width-tablet: 660px;
-$layout-width-desktop: 1200px;
 
 @media (min-width: $layout-width-mobile) {
   body {
     width: $layout-width-mobile;
-    border: 1px solid red;
   }
 }
 
 @media (min-width: $layout-width-tablet) {
   body {
     width: $layout-width-tablet;
-    border: 1px solid green;
   }
 }
 
 @media (min-width: $layout-width-desktop) {
   body {
     width: $layout-width-desktop;
-    border: 1px solid blue;
   }
 }
 
