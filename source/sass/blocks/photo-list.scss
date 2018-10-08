@@ -29,5 +29,7 @@
 }
 
 @media (min-width: $layout-width-desktop) {
-
+  .photo-list--other {
+    padding: 0 130px;
+  }
 }
