@@ -1,3 +1,51 @@
 .british-scientists {
   display: none;
 }
+
+@media (min-width: $layout-width-tablet) {
+  .british-scientists {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .british-scientists__image-wrapper {
+    position: relative;
+    margin-top: 59px;
+    margin-left: 21px;
+  }
+
+  .british-scientists__image {
+    width: 238px;
+    height: 276px;
+  }
+
+  .british-scientists__image-round {
+    width: 202px;
+    height: 202px;
+    position: absolute;
+    left: 18px;
+    top: 55px;
+  }
+
+  .british-scientists__24-hours {
+    position: absolute;
+    top: 100px;
+    left: 66px;
+
+    @include marpad;
+    font-size: 96px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 96px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #d22856;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .british-scientists {
+
+  }
+}

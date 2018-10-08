@@ -108,7 +108,7 @@
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages__advantages-list advantage-list">
           <li class="advantage-list__item">
-            <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
+            <img class="advantage-list__item-image" src="img/iphone-screen-1-desktop@1x.png" alt="Телефон">
             <h3 class="advantage-list__title">
               Поднимает настроение
             </h3>
@@ -117,7 +117,7 @@
             </p>
           </li>
           <li class="advantage-list__item">
-            <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
+            <img class="advantage-list__item-image" src="img/iphone-screen-2-desktop@1x.png" alt="Телефон">
             <h3 class="advantage-list__title">
               Меняет мир вокруг
             </h3>
@@ -126,7 +126,7 @@
             </p>
           </li>
           <li class="advantage-list__item">
-            <img class="advantage-list__item-image" src="http://placehold.it/190x300" alt="Телефон">
+            <img class="advantage-list__item-image" src="img/iphone-screen-3-desktop@1x.png" alt="Телефон">
             <h3 class="advantage-list__title">
               Заводит новых друзей
             </h3>
@@ -135,12 +135,19 @@
             </p>
           </li>
         </ul>
-        <div class="advantages__wrapper">
-          <img class="advantage-list__image" src="img/iphone-screen-mobile@1x.png">
+        <div class="advantages__picture-wrapper">
+          <picture class="advantages__picture">
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+            <img class="advantage-list__image" src="img/iphone-screen-mobile@1x.png" alt="Скрин приложения">
+          </picture>
         </div>
       </section>
       <section class="british-scientists">
-        <img class="british-scientists__image" src="http://placehold.it/150x40" alt="24 часа">
+        <div class="british-scientists__image-wrapper">
+          <img class="british-scientists__image" src="img/icon-timer.svg" alt="24 часа">
+          <img class="british-scientists__image-round" src="img/icon-editor-diagram-fill.svg" alt="24 часа">
+          <p class="british-scientists__24-hours">24</p>
+        </div>
         <div class="british-scientists__wrapper">
           <h3 class="british-scientists__head">Эффект на 24 часа!</h3>
           <p class="british-scientists__paragraph">
@@ -150,7 +157,7 @@
         </div>
       </section>
       <section class="reviews">
-        <span class="reviews__quotes">Кавычки</span>
+        <img class="reviews__quotes" src="img/icon-quotes.svg" alt="Кавычки">
         <p class="reviews__main-review">
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
         </p>

@@ -33,3 +33,22 @@
   text-align: center;
   color: #283645;
 }
+
+@media (min-width: $layout-width-tablet) {
+
+}
+
+@media (min-width: $layout-width-desktop) {
+  .advantage-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .advantages__picture-wrapper {
+    display: none;
+  }
+
+  .advantage-list__item-image {
+    display: block;
+  }
+}
