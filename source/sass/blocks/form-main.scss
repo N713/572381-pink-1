@@ -1,3 +1,9 @@
 .form-main {
   @include marpad;
 }
+
+@media (min-width: $layout-width-desktop) {
+  .form-main {
+    padding: 0 132px;
+  }
+}
