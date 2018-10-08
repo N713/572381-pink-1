@@ -32,3 +32,17 @@
 .rewiews__arrows {
   display: none;
 }
+
+@media (min-width: $layout-width-desktop) {
+  .reviews__quotes {
+    display: block;
+    margin: 0 auto;
+    width: 79px;
+    height: 63px;
+  }
+
+  .reviews__profession {
+    display: block;
+    text-align: center;
+  }
+}

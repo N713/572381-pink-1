@@ -42,3 +42,11 @@
   text-align: center;
   color: #d22856;
 }
+
+@media (min-width: $layout-width-tablet) {
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

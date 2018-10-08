@@ -1,3 +1,7 @@
-.tool-list {
+.tool-list,
+.tool-list__lone,
+.tool-list__buttons {
   @include marpad;
+
+  list-style: none;
 }

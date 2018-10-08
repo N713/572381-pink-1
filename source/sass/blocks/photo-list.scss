@@ -1,3 +1,35 @@
 .photo-list {
   @include marpad;
+  list-style: none;
+}
+
+.photo-list__item,
+.photo-list__paragraph-wrapper {
+  margin: 0 20px;
+}
+
+.photo-list__item--full {
+  margin: 0;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .photo-list--other {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo-list__item {
+    width: 300px;
+    margin: 0;
+  }
+
+  .photo-list__item--full {
+    width: 100%;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .photo-list--other {
+    padding: 0 130px;
+  }
 }

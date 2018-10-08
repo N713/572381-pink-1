@@ -1,3 +1,11 @@
 .editor {
   @include marpad;
+
+  padding: 0 20px;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .editor__field {
+    display: flex;
+  }
 }

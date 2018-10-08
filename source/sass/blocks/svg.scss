@@ -1,0 +1,38 @@
+.logo__pink {
+  fill: #ffffff;
+}
+
+.logo__pink:hover {
+  fill: #d22856;
+}
+
+.logo__mobile {
+  display: block;
+}
+
+.logo__tablet,
+.logo__desktop {
+  display: none;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .logo__mobile,
+  .logo__desktop {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .logo__mobile,
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
+  }
+}
