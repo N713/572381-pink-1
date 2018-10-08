@@ -1,9 +1,12 @@
 .site-list {
   list-style: none;
-  border: 1px solid yellow;
   background-color: #283645;
 
   @include marpad;
+}
+
+.site-list--second {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .site-list__item {
@@ -15,6 +18,8 @@
 .site-list__item--double {
   display: flex;
   justify-content: space-between;
+
+  @include marpad;
   padding: 22px 20px 25px 20px;
 }
 
@@ -38,4 +43,18 @@
 
 .site-list__link:hover {
   color: #d22856;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .site-list--second {
+    margin-bottom: 74px;
+  }
+
+  .site-list__item--double {
+    padding: 27px auto 43px 20px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+
 }

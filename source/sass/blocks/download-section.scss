@@ -1,6 +1,14 @@
-.download-section {
-  border: 1px solid teal;
+.download-section__picture {
+  width: 0;
+  height: 0;
+}
+
+.download-section__wrapper {
   background-color: #283645;
+}
+
+.download-section__paragraph {
+  @include marpad;
 }
 
 .download-section__paragraph--available {
@@ -13,5 +21,30 @@
   text-align: center;
   color: #ffffff;
   margin: 0 40px;
-  margin-bottom: 35px;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .download-section {
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 545px;
+  }
+
+  .download-section__image {
+    position: absolute;
+  }
+
+  .download-section__wrapper {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .download-section {
+    min-height: 645px;
+  }
+
+  .download-section__image {
+    right: 100px;
+  }
 }
