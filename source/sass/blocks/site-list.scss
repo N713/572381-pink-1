@@ -31,6 +31,18 @@
   @include marpad;
 }
 
+.site-list__toggle-opened {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+}
+
+.site-list__toggle-closed {
+  width: 50px;
+  height: 24px;
+  margin-top: auto;
+}
+
 .site-list__link {
   display: block;
   font-size: 18px;
@@ -59,11 +71,18 @@
   }
 
   .site-list__item--double {
-    padding: 27px auto 43px 20px;
+    padding: 27px 20px 43px 20px;
   }
 }
 
 .no-color {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: none;
+}
+
+@media (min-width: $layout-width-desktop) {
+  .site-list__toggle-opened,
+  .site-list__toggle-closed {
+    display: none;
+  }
 }
