@@ -38,6 +38,10 @@
   display: none;
 }
 
+.reviews__bullets {
+  order: -1;
+}
+
 @media (min-width: $layout-width-tablet) {
   .reviews {
     margin-bottom: -1px;

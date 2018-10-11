@@ -75,11 +75,6 @@
   }
 }
 
-.no-color {
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: none;
-}
-
 @media (min-width: $layout-width-desktop) {
   .site-list__toggle-opened,
   .site-list__toggle-closed {
