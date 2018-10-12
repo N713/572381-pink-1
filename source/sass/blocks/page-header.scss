@@ -7,8 +7,7 @@
 .page-header__wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  position: relative;
-  z-index: -1;
+  background-position: bottom 271px right 50%;
 }
 
 .page-header__paragraph {
@@ -23,8 +22,7 @@
 @media (min-width: $layout-width-tablet) {
   .page-header__wrapper {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center center;
-    margin-top: -88px;
+    background-position: center bottom;
   }
 }
 

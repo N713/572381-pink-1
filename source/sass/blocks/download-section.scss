@@ -1,3 +1,11 @@
+.download-section {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 286px;
+  margin-top: 100px;
+}
+
 .download-section__picture {
   width: 0;
   height: 0;
@@ -5,13 +13,37 @@
 
 .download-section__wrapper {
   background-color: #283645;
+  padding-top: 28px;
+  padding-bottom: 35px;
 }
 
 .download-section__paragraph {
   @include marpad;
+
+  display: none;
+}
+
+.download-section__link {
+  display: block;
+  box-sizing: border-box;
+  width: 281px;
+  margin: 0 auto;
+  padding: 16px 0;
+  border: solid 3px #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: center;
 }
 
 .download-section__paragraph--available {
+  display: block;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -21,12 +53,17 @@
   text-align: center;
   color: #ffffff;
   margin: 0 40px;
+  margin-top: 28px;
 }
 
 @media (min-width: $layout-width-tablet) {
   .download-section {
-    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: right top;
     min-height: 545px;
+
+    @include marpad;
+    margin-top: 74px;
   }
 
   .download-section__image {
@@ -41,7 +78,10 @@
 
 @media (min-width: $layout-width-desktop) {
   .download-section {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: center top;
     min-height: 645px;
+    margin-top: 99px;
   }
 
   .download-section__image {

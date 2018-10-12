@@ -1,0 +1,122 @@
+.plan-table {
+  margin: 0 auto;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.plan-table tbody {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-collapse: collapse;
+}
+
+.plan-table__item {
+  display: flex;
+}
+
+.plan-table__item-best-plan {
+  width: 276px;
+  flex-shrink: 0;
+  border: 2px solid #f2f2f2;
+}
+
+.plan-table__item--title {
+  background-color: #283645;
+  display: flex;
+}
+
+.plan-table__item-name {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.plan-table__item-hit {
+  color: $font-color-white;
+  font-size: 10px;
+  font-family: $font-family;
+  font-weight: $font-regular;
+  text-trandform: uppercase;
+  background-color: #d22856;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.plan-table__item-cost {
+  color: $font-color-white;
+  font-size: 24px;
+  font-weight: $font-light;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.plan-table__item-option {
+  color: #283645;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  border: 2px solid #f2f2f2;
+  width: 276px;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background-color: #ffffff;
+}
+
+.plan-table__item-option--extra,
+.plan-table__item-best-plan--extra {
+  display: none;
+}
+
+.plan-table__item-hidden {
+  margin-left: 20px;
+}
+
+.plan-table__image {
+  margin-right: 17px;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .plan-table tbody {
+    width: 616px;
+  }
+
+  .plan-table__item-best-plan {
+    width: 152px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-table__item-option--extra,
+  .plan-table__item-best-plan--extra {
+    display: block;
+    width: 152px;
+  }
+
+  .plan-table__item-best-plan--extra {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+  }
+
+  .plan-table__item-option {
+    width: 152px;
+    min-height: 45px;
+    display: flex;
+  }
+
+  .plan-table__item-hidden {
+    display: none;
+  }
+
+  .plan-table__image {
+    margin: 0 auto;
+  }
+}
