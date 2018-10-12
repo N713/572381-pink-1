@@ -1,5 +1,5 @@
 .table {
-  border-spacing: 2px 0px;
+  border-spacing: 2px 0;
   flex-shrink: 0;
   margin-left: -300px;
 }
@@ -173,8 +173,4 @@
     display: block;
     margin: 0 auto;
   }
-}
-
-@media (min-width: $layout-width-desktop) {
-
 }
