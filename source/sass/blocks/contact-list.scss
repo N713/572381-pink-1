@@ -4,19 +4,6 @@
   @include marpad;
 }
 
-.contacts__paragraph {
-  font-size: 24px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #283645;
-
-  @include marpad;
-}
-
 .contacts__wrapper {
   margin-bottom: 44px;
 }
@@ -48,5 +35,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .contact-list__item {
+    width: 300px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .contact-list {
+    justify-content: space-between;
+  }
+
+  .contact-list__item {
+    width: 240px;
   }
 }

@@ -1,7 +1,7 @@
 .table {
   border-spacing: 2px 0;
   flex-shrink: 0;
-  margin-left: -300px;
+  margin-left: -280px;
 }
 
 .table__cell-paragraph {
@@ -20,6 +20,7 @@
 }
 
 .table__cell {
+  box-sizing: border-box;
   padding: 6px;
   background-color: #ffffff;
   width: 276px;
@@ -34,6 +35,7 @@
 }
 
 .table__cell--head {
+  box-sizing: border-box;
   width: 276px;
   position: relative;
   border: solid 2px #283645;
@@ -79,7 +81,7 @@
 }
 
 .table__item-name {
-  margin-top: 22px;
+  margin-top: 11px;
   width: 95px;
   font-size: 18px;
   font-weight: bold;
@@ -94,7 +96,7 @@
 
 .table__item-cost {
   margin-top: 11px;
-  margin-bottom: 21px;
+  margin-bottom: 11px;
   width: 98px;
   font-size: 24px;
   font-weight: 300;
@@ -126,7 +128,7 @@
   display: inline-block;
   text-align: right;
   vertical-align: middle;
-  margin-left: 75px;
+  margin-left: 60px;
 }
 
 @media (min-width: $layout-width-tablet) {
@@ -139,7 +141,7 @@
   }
 
   .table__item-name {
-    margin-top: 14px;
+    margin-top: 6px;
     width: 85px;
     font-size: 16px;
     line-height: 18px;
@@ -147,7 +149,7 @@
 
   .table__item-cost {
     margin-top: 11px;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
     width: 74px;
     font-size: 18px;
     line-height: 20px;
@@ -160,17 +162,37 @@
 
   .table__cell,
   .table__cell--head {
+    box-sizing: border-box;
     width: 153px;
   }
 
   .table__item-hit {
     width: 61px;
     height: 61px;
-    background-position: 0 -20px;
+    background-position: 0 -17px;
   }
 
   .table__cell-image {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .table {
+    margin: 0 auto;
+  }
+
+  .table__cell,
+  .table__cell--head {
+    box-sizing: border-box;
+    width: 233px;
+  }
+
+  .table__cell--name {
+    min-height: 59px;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 20px;
   }
 }

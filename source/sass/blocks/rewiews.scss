@@ -45,6 +45,30 @@
 @media (min-width: $layout-width-tablet) {
   .reviews {
     margin-bottom: -1px;
+    color: #283645;
+  }
+
+  .reviews__main-review {
+    order: 3;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .reviews__name {
+    margin: 0;
+    order: 2;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  .reviews__profession {
+    display: inline-block;
+    text-align: center;
+    order: 1;
+    margin: 0;
+    font-size: 14px;
+    line-height: 2.14;
   }
 }
 
@@ -63,5 +87,76 @@
 
   .reviews__bullets {
     display: none;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .reviews__quotes {
+    order: 4;
+    margin-top: 72px;
+    margin-bottom: 48px;
+  }
+
+  .reviews__wrapper {
+    order: 3;
+    position: relative;
+  }
+
+  .reviews__main-review {
+    width: 685px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+    padding: 0;
+  }
+
+  .reviews__name {
+    order: 2;
+    font-size: 24px;
+  }
+
+  .reviews__profession {
+    order: 1;
+    font-size: 18px;
+  }
+
+  .arrow-button {
+    position: absolute;
+    top: 30%;
+    width: 22px;
+    height: 41px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+
+  .arrow-button__right {
+    right: 130px;
+  }
+
+  .arrow-button__left {
+    left: 130px;
+  }
+
+  .arrow-button__svg {
+    fill: #283645;
+    fill-opacity: 0.3;
+
+    &:focus,
+    &:hover {
+      fill-opacity: 0.6;
+    }
+
+    &:active {
+      fill-opacity: 0.1;
+    }
   }
 }

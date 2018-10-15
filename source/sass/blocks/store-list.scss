@@ -33,3 +33,15 @@
   background-repeat: no-repeat;
   background-position: center bottom;
 }
+
+@media (min-width: $layout-width-tablet) {
+  .store-list {
+    margin-top: 46px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .store-list {
+    margin-top: 67px;
+  }
+}
