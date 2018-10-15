@@ -33,10 +33,23 @@
   box-sizing: border-box;
   width: 281px;
   margin: 0 auto;
-  padding: 16px 0;
+  padding: 14px 35px;
   border: solid 3px #ffffff;
   border-radius: 30px;
   text-decoration: none;
+
+  &:focus,
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.download-section__download {
   color: #ffffff;
   font-size: 18px;
   font-weight: bold;
@@ -81,15 +94,48 @@
   }
 
   .download-section__wrapper {
-    position: absolute;
+    display: inline-block;
+    margin-left: 20px;
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  .download-section__paragraph {
+    display: block;
+    margin: 0 auto;
+    width: 186px;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .download-section__paragraph--available {
+    width: 300px;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-top: 46px;
+  }
+
+  .download-section__link {
+    width: 300px;
+    margin-top: 36px;
+    padding: 14px 45px;
+    border-radius: 35px;
+  }
+
+  .download-section__download {
+    font-size: 18px;
+    line-height: 18px;
   }
 }
 
 @media (min-width: $layout-width-desktop) {
   .download-section {
     background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-position: center top;
     min-height: 645px;
     margin-top: 99px;
 
@@ -101,5 +147,35 @@
 
   .download-section__image {
     right: 100px;
+  }
+
+  .download-section__paragraph {
+    width: 231px;
+    font-size: 50px;
+    line-height: 59px;
+  }
+
+  .download-section__paragraph--available {
+    width: 296px;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-top: 57px;
+  }
+
+  .download-section__wrapper {
+    padding-top: 12px;
+    margin-left: 130px;
+  }
+
+  .download-section__download {
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .download-section__link {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 20px;
+    margin-top: 50px;
   }
 }

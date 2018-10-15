@@ -1,4 +1,4 @@
-.logo__pink {
+.logo-pink {
   fill: #ffffff;
 
   &:hover,
@@ -7,6 +7,37 @@
   }
 
   &:active {
-    fill: rgba(255, 255, 255, 0.3);
+    fill-opacity: 0.3;
+  }
+}
+
+.logo-pink__mobile {
+  display: block;
+}
+
+.logo-pink__tablet,
+.logo-pink__desktop {
+  display: none;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .logo-pink__mobile,
+  .logo-pink__desktop {
+    display: none;
+  }
+
+  .logo-pink__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .logo-pink__mobile,
+  .logo-pink__tablet {
+    display: none;
+  }
+
+  .logo-pink__desktop {
+    display: block;
   }
 }
