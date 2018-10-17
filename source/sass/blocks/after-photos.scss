@@ -1,3 +1,29 @@
 .after-photos {
-  @include marpad;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  padding-top: 49px;
+  padding-bottom: 48px;
+}
+
+.after-photos__paragraph {
+  color: $color-main;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .after-photos {
+    width: $layout-width-tablet;
+    padding-top: 74px;
+    padding-bottom: 72px;
+  }
+
+  .after-photos__paragraph {
+    font-size: 18px;
+    margin: 0 auto;
+  }
 }

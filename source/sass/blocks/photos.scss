@@ -1,3 +1,32 @@
-.photos {
-  @include marpad;
+.photos__paragraph {
+  color: $color-main;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  margin: 0 auto;
+  margin-top: 54px;
+  margin-bottom: 56px;
+  width: 250px;
+  text-align: center;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .photos__paragraph {
+    width: 450px;
+    font-size: 18px;
+    font-weight: $font-regular;
+    line-height: 30px;
+    color: $color-main;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .photos__paragraph {
+    width: 600px;
+  }
 }

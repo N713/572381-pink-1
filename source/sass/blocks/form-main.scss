@@ -1,9 +1,64 @@
 .form-main {
-  @include marpad;
+  width: $layout-width-mobile;
+  border: 1px solid green;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-main__paragraph {
+  color: #283645;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  text-align: center;
+  width: 270px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 54px;
+  margin-bottom: 28px;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .form-main {
+    width: $layout-width-tablet;
+  }
+
+  .form-main__paragraph {
+    font-size: 18px;
+    width: 490px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 75px;
+  }
 }
 
 @media (min-width: $layout-width-desktop) {
   .form-main {
-    padding: 0 132px;
+    width: $layout-width-desktop;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $layout-width-tablet) {
+  .form-main {
+    width: $layout-width-tablet;
+  }
+
+  .form-main__paragraph {
+    font-size: 18px;
+    width: 490px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .form-main {
+    width: $layout-width-desktop;
+    margin: 0 auto;
   }
 }

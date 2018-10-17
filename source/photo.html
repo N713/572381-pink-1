@@ -78,12 +78,14 @@
         <ul class="photos__photos-list photo-list">
           <li class="photo-list__item photo-list__item--full">
             <div class="photo-list__item-wrapper">
-              <picture>
+              <picture class="photo-list__picture">
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="photo-list__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+                <img class="photo-list__image photo-list__image--full" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
               </picture>
-              <p class="photo-list__item-paragraph-day">Панорама дня</p>
+              <p class="photo-list__item-paragraph-day">
+                <span class="photo-list__item-day-span">Панорама дня</span>
+              </p>
                 <div class="photo-list__paragraph-wrapper">
                   <p class="photo-list__item-name">Анна
                     <span class="photo-list__item-time">(5 минут назад)</span>
@@ -225,7 +227,7 @@
       <section >
         <form class="editor" action="https://echo.htmlacademy.ru" method="get">
           <div class="editor__field">
-            <picture>
+            <picture class="editor__picture">
               <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
               <img class="photo-list__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Автомобиль">
@@ -233,26 +235,30 @@
             <div class="editor__wrapper">
               <ul class="editor__tools-list tool-list">
                 <li class="tool-list__group">
-                  <input class="tool-item" type="checkbox" name="size-edit" id="edit-size" checked>
-                  <label for="edit-size">icon</label>
-                  <input class="tool-item-range" type="range" min="1" max="10">
+                  <input class="tool-list__item-size" type="checkbox" name="size-edit" id="edit-size" checked>
+                  <label class="tool-list__label-size" for="edit-size"></label>
+                  <div class="range range--size">
+                    <div class="range__togler range__togler--size"></div>
+                  </div>
                 </li>
                 <li class="tool-list__group">
-                  <input class="tool-item" type="checkbox" name="color-edit" id="edit-color">
-                  <label for="edit-color">icon</label>
-                  <input class="tool-item-range" type="range" min="1" max="10">
+                  <input class="tool-list__item-color" type="checkbox" name="color-edit" id="edit-color">
+                  <label class="tool-list__label-color" for="edit-color"></label>
+                  <div class="range range--color">
+                    <div class="range__togler range__togler--color"></div>
+                  </div>
                 </li>
                 <li class="tool-list__group">
-                  <input class="tool-item" type="checkbox" name="brightness-edit" id="edit-brightness">
-                  <label for="edit-brightness">icon</label>
-                  <input class="tool-item-range" type="range" min="1" max="10">
+                  <input class="tool-list__item-brightness" type="checkbox" name="brightness-edit" id="edit-brightness">
+                  <label class="tool-list__label-brightness" for="edit-brightness"></label>
+                  <div class="range range--brightness">
+                    <div class="range__togler range__togler--brightness"></div>
+                  </div>
                 </li>
               </ul>
-              <ul class="tool-list__lone">
-                <li class="tool-list__lone-item">
-                  <input class="tool-list__lone-range" type="range" min="1" max="10">
-                </li>
-              </ul>
+              <div class="range range--total">
+                <div class="range__togler"></div>
+              </div>
               <ul class="tool-list__buttons">
                 <li class="tool-list__buttons-item">
                   <button class="buttons-list__button button" type="submit">Запостить</button>

@@ -1,38 +1,46 @@
 @import "fonts";
 @import "blocks/mixin";
 @import "blocks/variables";
+@import "blocks/visually-hidden";
+@import "blocks/range";
+
+/* index.html */
 @import "blocks/logo-pink";
-@import "blocks/slider";
-@import "blocks/advantage-list";
-@import "blocks/advantages";
-@import "blocks/arrow-button";
-@import "blocks/british-scientists";
-@import "blocks/contacts";
-@import "blocks/download-section";
-@import "blocks/map";
-@import "blocks/offer";
-@import "blocks/page-footer-wrapper";
-@import "blocks/page-footer";
 @import "blocks/page-header";
-@import "blocks/page-navigation";
-@import "blocks/rewiews";
 @import "blocks/site-list";
-@import "blocks/social-list";
-@import "blocks/table";
+@import "blocks/download-section";
+@import "blocks/store-list";
 @import "blocks/index-main";
-@import "blocks/buttons";
-@import "blocks/form-main";
-@import "blocks/form";
-@import "blocks/after-photos";
-@import "blocks/editor";
-@import "blocks/photo-list";
+@import "blocks/offer";
+@import "blocks/advantages";
+@import "blocks/advantage-list";
+@import "blocks/british-scientists";
+@import "blocks/rewiews";
+@import "blocks/arrow-button";
+@import "blocks/using-plan";
+@import "blocks/table";
+@import "blocks/slider";
+@import "blocks/contacts";
+@import "blocks/contact-list";
+@import "blocks/map";
+
+/* photo.html */
 @import "blocks/photo-main";
 @import "blocks/photos";
+@import "blocks/photo-list";
+@import "blocks/after-photos";
+@import "blocks/editor";
 @import "blocks/tool-list";
-@import "blocks/visually-hidden";
-@import "blocks/using-plan";
-@import "blocks/contact-list";
-@import "blocks/store-list";
+
+/* form.html */
+@import "blocks/form-main";
+@import "blocks/form";
+
+/* footer */
+@import "blocks/page-footer";
+@import "blocks/page-footer-wrapper";
+@import "blocks/social-list";
+@import "blocks/buttons";
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;

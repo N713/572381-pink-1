@@ -1,11 +1,75 @@
-.editor {
-  @include marpad;
+@media (min-width: $layout-width-mobile) {
+  .editor {
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-  padding: 0 20px;
+  .editor__field {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .editor__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editor__image {
+    padding-left: 18px;
+    padding-right: 20px;
+  }
+
+  .editor__picture {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $layout-width-tablet) {
   .editor__field {
     display: flex;
+    flex-direction: row;
+    margin-top: 57px;
+    margin-bottom: 54px;
+  }
+
+  .editor__image {
+    padding: 0;
+    margin-left: 18px;
+    margin-right: 20px;
+  }
+
+  .editor__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .editor {
+    width: 940px;
+    padding: 57px 0;
+    padding-left: 80px;
+    padding-right: 60px;
+    margin: 0 auto;
+  }
+
+  .editor__field {
+    width: 800px;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .editor__wrapper {
+    width: 410px;
+    margin: 0;
+  }
+
+  .editor__image {
+    margin: 0;
   }
 }

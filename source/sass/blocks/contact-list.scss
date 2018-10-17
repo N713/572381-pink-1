@@ -1,53 +1,45 @@
 .contact-list {
+  margin: 0;
+  margin-top: 44px;
+  padding: 0;
   list-style: none;
-
-  @include marpad;
-}
-
-.contacts__wrapper {
-  margin-bottom: 44px;
+  text-align: center;
 }
 
 .contact-list__item-name {
+  color: #283645;
   font-size: 18px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
-  color: #283645;
 }
 
 .contact-list__item-info {
-  font-size: 24px;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center;
   color: #d22856;
+  font-size: 24px;
+  font-weight: light;
+  text-align: center;
+}
+
+.contact-list__item-info-br {
+  display: none;
 }
 
 @media (min-width: $layout-width-tablet) {
   .contact-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-grow: 1;
+    margin-top: 57px;
   }
 
   .contact-list__item {
-    width: 300px;
+    width: 330px;
+    flex-shrink: 0;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: $layout-width-desktop) {
-  .contact-list {
-    justify-content: space-between;
-  }
-
-  .contact-list__item {
-    width: 240px;
+  .contact-list__item-info-br {
+    display: block;
   }
 }

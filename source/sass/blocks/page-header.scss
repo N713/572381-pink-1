@@ -6,13 +6,28 @@
 
 .page-header__wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
   background-position: bottom 271px right 50%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 710px auto;
   }
+}
+
+.page-header__describe {
+  margin: 0;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.page-header__title {
+  display: inline-block;
+  margin-bottom: 87px;
+  width: 230px;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 300;
 }
 
 .page-header__paragraph {
@@ -34,6 +49,17 @@
       background-size: 1201px auto;
     }
   }
+
+  .page-header__describe {
+    padding-top: 81px;
+  }
+
+  .page-header__title {
+    width: 480px;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 150px;
+  }
 }
 
 @media (min-width: $layout-width-desktop) {
@@ -44,5 +70,17 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
+  }
+
+  .page-header__describe {
+    padding-top: 74px;
+  }
+
+  .page-header__title {
+    margin-bottom: 111px;
+  }
+
+  .page-header__title--form {
+    width: 750px;
   }
 }

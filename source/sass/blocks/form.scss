@@ -1,54 +1,602 @@
 .form {
-  @include marpad;
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__username {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.form__name {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  text-transform: uppercase;
+  width: 276px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input-check {
+  margin: 0;
+}
+
+.form__label {
+  margin-left: 33px;
+  margin-top: 28px;
+  color: $color-main;
+  font-weight: $font-regular;
+  line-height: 30px;
+  font-family: $font-family;
+  font-size: 18px;
+}
+
+.form__legend {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  padding-top: 41px;
+  padding-bottom: 42px;
+  text-align: center;
+  color: #d22856;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  color: $color-main;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  height: 59px;
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
+::-webkit-input-placeholder {
+  color: $color-main;
+}
+
+::-moz-placeholder {
+  color: $color-main;
+}
+
+:-moz-placeholder {
+  color: $color-main;
+}
+
+:-ms-input-placeholder {
+  color: $color-main;
+}
+
+.form__user-achievements {
+  background-color: #f2f2f2;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 41px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__user-achievement-legend,
+.form__user-contacts,
+.form__user-app,
+.form__user-emotions, {
+  color: #d22856;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__required-paragraph {
+  color: #283645;
+  margin-top: 46px;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__sup {
+  color: #d22856;
+}
+
+.form__user-contacts {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__number,
+.form__mail {
+  margin: 0;
+  padding: 0;
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__legend--contact {
+  display: none;
+}
+
+.form__legend--emotions {
+  margin: 0;
+  margin-bottom: 19px;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.form__user-app {
+  background-color: #f2f2f2;
+  margin: 0;
+  margin-top: 44px;
+  padding: 0;
+  padding-bottom: 44px;
+  border: none;
+}
+
+.form__user-emotions {
+  border: none;
+  margin: 0;
+  margin-top: 41px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__user-emotions-area {
+  width: 276px;
+  height: 197px;
+  border: 2px solid #e5e5e5;
+  color: $color-main;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: $font-regular;
+  line-height: 30px;
+  padding-top: 23px;
+  padding-left: 19px;
+}
+
+.form__label--red {
+  color: #d22856;
+  font-size: 14px;
+}
+
+.form__button-wrap {
+  margin-top: 41px;
+}
+
+.form__submit {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+}
+
+.button {
+  width: 276px;
+  height: 59px;
+  border: 2px solid #2aab6d;
+  border-radius: 2px;
+  background-color: #2aab6d;
+}
+
+.form__send {
+  margin: 0;
+  padding: 0;
+  width: $layout-width-mobile;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form__send-b {
+  color: #000000;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: $font-bold;
+  margin-top: 46px;
+  margin-bottom: 30px;
+}
+
+.form__send-paragraph {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  color: $color-main;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 24px;
+  text-align: center;
+}
+
+.form__send-paragraph br {
+  display: none;
+}
+
+.form__send-paragraph--failure {
+  margin: 0;
+  padding: 0;
+}
+
+.form__send-button-wrapper {
+  margin: 0;
+  padding: 0;
+  width: $layout-width-mobile;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.form__send-button {
+  margin-top: 50px;
+  margin-bottom: 54px;
+  color: #ffffff;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__send-button-wrapper--failure {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $layout-width-tablet) {
-  .form {
+  .form__name {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    width: $layout-width-tablet;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+
+  .form__user-achievements,
+  .form__user-contacts,
+  .form__user-app,
+  .form__user-emotions {
+    margin: 0;
+    padding: 0;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    width: 616px;
   }
 
   .form__username {
     order: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form__user-achievements {
+    order: 4;
+    margin-top: 49px;
+  }
+
+  .form__user-contacts {
+    order: 3;
+    margin-top: 49px;
   }
 
   .form__user-app {
     order: 2;
   }
 
-  .form__user-contacts {
-    order: 3;
-  }
-
-  .form__user-achievements {
-    order: 4;
-  }
-
   .form__user-emotions {
+    margin-top: 62px;
+    padding: 0;
     order: 5;
   }
 
   .form__button-wrap {
     order: 6;
+    width: 616px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-top: 71px;
+    margin-bottom: 52px;
+  }
+
+  .form__user-emotions-area {
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 23px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+    width: 496px;
+    height: 189px;
+    border: 2px solid #e5e5e5;
+    color: $color-main;
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: $font-regular;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .form__legend {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 0;
+    margin: 13px auto;
+  }
+
+  .form__legend--contact {
+    display: block;
+  }
+
+  .form__user-contacts legend {
+    margin-bottom: 0;
+  }
+
+  .form__contacts-wrapper {
+    padding-bottom: 33px;
+  }
+
+  .form__label {
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .form__label--radio {
+    text-transform: none;
+  }
+
+  .form__input {
+    flex-grow: 1;
+    margin: 0;
+    margin-left: 22px;
+    margin-right: 22px;
+    padding-left: 22px;
+    color: #283645;
+    font-family: $font-family;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .form__number,
+  .form__mail {
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    width: 616px;
+    padding: 0 38px;
+  }
+
+  .form__number label,
+  .form__mail label {
+    margin-top: 21px;
+    margin-left: 38px;
+  }
+
+  .form__number input,
+  .form__mail input {
+    margin-top: 40px;
+  }
+
+  .form__required-paragraph {
+    margin: 0;
+  }
+
+  .form__send {
+    width: 464px;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+
+  .form__send-b {
+    width: 225px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .form__send-paragraph {
+    font-size: 18px;
+    font-weight: $font-regular;
+    font-family: $font-family;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 80px;
+  }
+
+  .form__send-paragraph br {
+    display: block;
+  }
+
+  .form__send-button-wrapper {
+    width: 100%;
+    margin-top: 38px;
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+
+  .form__send-button {
+    width: 295px;
+    height: 59px;
+    margin: 0;
+  }
+
+  .form__send-button--failure {
+    margin-top: 44px;
+    margin-bottom: 56px;
+  }
+
+  .form__send-button-wrapper--failure {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: $layout-width-desktop) {
   .form {
+    width: $layout-width-desktop;
+    box-sizing: border-box;
+    padding: 0 130px;
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
   }
 
-  .form__user-contacts,
-  .form__user-achievements,
-  .form__user-emotions {
-    width: 100%;
+  .form__legend--contact {
+    display: block;
   }
 
-  .form__username,
+  .form__username {
+    order: 2;
+  }
+
+  .form__name {
+    width: 435px;
+  }
+
+  .form__name label {
+    margin: 0;
+  }
+
+  .form__name input {
+    margin-right: 0;
+  }
+
+  .form__user-achievements {
+    order: 4;
+    width: 936px;
+  }
+
+  .form__user-contacts {
+    order: 3;
+    width: 936px;
+  }
+
   .form__user-app {
+    order: 2;
     width: 431px;
+    margin-top: -90px;
+  }
 
-    @include marpad;
+  .form__user-emotions {
+    order: 5;
+    width: 936px;
+  }
+
+  .form__button-wrap {
+    order: 6;
+    width: 936px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+
+  .form__number,
+  .form__mail {
+    padding: 0;
+    width: 371px;
+  }
+
+  .form__number input,
+  .form__mail input {
+    width: 371px;
+    margin: 0;
+    margin-top: 44px;
+  }
+
+  .form__number label,
+  .form__mail label {
+    width: 300px;
+    margin-top: 21px;
+    margin-bottom: 20px;
+  }
+
+  .form__user-emotions-area {
+    margin: 45px auto;
+    margin-top: 26px;
+    width: 816px;
+    padding-left: 20px;
+    text-align: left;
+  }
+
+  .form__submit {
+    width: 296px;
+    height: 59px;
+  }
+
+  .form__send {
+    width: 782px;
+  }
+
+  .form__send-b {
+    width: auto;
+  }
+
+  .form__send-paragraph {
+    width: 400px;
+  }
+
+  .form__send-paragraph br {
+    display: none;
+  }
+
+  .form__send-button-wrapper {
+    min-height: 163px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 39px;
+  }
+
+  .form__send-button {
+    width: 456px;
+    height: 59px;
+  }
+
+  .form__send-button-wrapper--failure {
+    background-color: #f2f2f2;
+    margin-top: 62px;
+  }
+
+  .form__send-button--failure {
+    width: 296px;
   }
 }

@@ -1,0 +1,67 @@
+.range {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
+  margin: 0 auto;
+}
+
+.range__togler {
+  position: absolute;
+  top: -6px;
+  right: 33px;
+  width: 10px;
+  height: 10px;
+  border: solid 2px #d22856;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.range--size,
+.range--color,
+.range--brightness {
+  display: none;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .range--total {
+    display: none;
+  }
+
+  .range--size,
+  .range--color,
+  .range--brightness {
+    display: block;
+    width: 202px;
+  }
+
+  .range__togler--size {
+    right: 42px;
+  }
+
+  .range__togler--color {
+    right: 25px;
+  }
+
+  .range__togler--brightness {
+    right: 92px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .range {
+    width: 288px;
+  }
+
+  .range__togler--size {
+    left: 70px;
+  }
+
+  .range__togler--color {
+    right: 27px;
+  }
+
+  .range__togler--brightness {
+    right: 114px;
+  }
+}

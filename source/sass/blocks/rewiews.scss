@@ -34,7 +34,7 @@
   display: none;
 }
 
-.rewiews__arrows {
+.arrow-button {
   display: none;
 }
 
@@ -98,13 +98,13 @@
   }
 
   .reviews__wrapper {
+    display: flex;
     order: 3;
-    position: relative;
   }
 
   .reviews__main-review {
+    order: 2;
     width: 685px;
-    margin: 0 auto;
     margin-bottom: 44px;
     padding: 0;
   }
@@ -120,8 +120,7 @@
   }
 
   .arrow-button {
-    position: absolute;
-    top: 30%;
+    display: block;
     width: 22px;
     height: 41px;
     border: none;
@@ -140,10 +139,12 @@
 
   .arrow-button__right {
     right: 130px;
+    order: 3;
   }
 
   .arrow-button__left {
     left: 130px;
+    order: 1;
   }
 
   .arrow-button__svg {
