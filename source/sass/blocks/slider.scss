@@ -24,6 +24,16 @@
   opacity: 0.3;
   background-color: #283645;
   border-radius: 3px;
+  cursor: pointer;
+}
+
+.slider__item-bullet:focus + .slider__item-label:focus,
+.slider__item-bullet:hover + .slider__item-label:hover {
+  opacity: 0.6;
+}
+
+.slider__item-bullet:active + .slider__item-label:active {
+  opacity: 0.1;
 }
 
 .slider__item-bullet:checked + .slider__item-label {
@@ -33,4 +43,10 @@
   border: solid 3px #283645;
   background-color: #ffffff;
   opacity: 1;
+}
+
+@media (min-width: $layout-width-desktop) {
+  .slider {
+    display: none;
+  }
 }

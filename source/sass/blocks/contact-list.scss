@@ -23,6 +23,22 @@
   display: none;
 }
 
+.contact-list__link {
+  color: #d22856;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
+}
+
 @media (min-width: $layout-width-tablet) {
   .contact-list {
     display: flex;

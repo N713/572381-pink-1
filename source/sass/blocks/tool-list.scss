@@ -1,4 +1,6 @@
 .tool-list {
+  display: flex;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -11,6 +13,50 @@
   @include marpad;
   list-style: none;
   margin: 0 auto;
+}
+
+.tool-list__button {
+  width: 280px;
+  padding: 15px;
+  border: solid 3px #d22856;
+  border-radius: 30px;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #d22856;
+
+  &:focus,
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    background-color: #d22856;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.tool-list__button--cancel {
+  border: solid 3px #283645;
+  color: rgb(40, 54, 69);
+  opacity: 0.1;
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+    color: rgb(40, 54, 69);
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: #283645;
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 0.3;
+  }
 }
 
 .tool-list__item-size,
@@ -78,6 +124,8 @@
   background-position: center center;
   opacity: 1;
 }
+
+
 
 @media (min-width: $layout-width-tablet) {
   .tool-list {

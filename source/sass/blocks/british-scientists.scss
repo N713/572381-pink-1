@@ -64,6 +64,17 @@
   .british-scientists__link {
     font-size: 14px;
     color: #d22856;
+
+    &:focus,
+    &:hover {
+      color: #283645;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: rgba(40, 54, 69, 0.3);
+      text-decoration: none;
+    }
   }
 }
 

@@ -20,6 +20,26 @@
   display: none;
 }
 
+.logo-pink__blue {
+  &:active {
+    fill-opacity: 0.3;
+  }
+}
+
+.logo-blue {
+  fill: #283645;
+
+  &:focus,
+  &:hover {
+    fill: #d22856;
+  }
+}
+
+
+.logo-pink__blue--desktop {
+  display: none;
+}
+
 @media (min-width: $layout-width-tablet) {
   .logo-pink__mobile,
   .logo-pink__desktop {
@@ -38,6 +58,14 @@
   }
 
   .logo-pink__desktop {
+    display: block;
+  }
+
+  .logo-pink__blue {
+    display: none;
+  }
+
+  .logo-pink__blue--desktop {
     display: block;
   }
 }
