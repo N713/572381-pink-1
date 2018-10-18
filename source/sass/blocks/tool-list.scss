@@ -73,16 +73,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.3;
-}
-
-.tool-list__item-size:hover + .tool-list__label-size {
-  opacity: 0.5;
-}
-
-.tool-list__item-size:checked + .tool-list__label-size {
-  background-image: url("../img/icon-editor-crop-color.svg");
-  background-position: center center;
-  opacity: 1;
+  cursor: pointer;
 }
 
 .tool-list__item-color + .tool-list__label-color {
@@ -93,16 +84,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.3;
-}
-
-.tool-list__item-color:hover + .tool-list__label-color {
-  opacity: 0.5;
-}
-
-.tool-list__item-color:checked + .tool-list__label-color {
-  background-image: url("../img/icon-editor-fill-color.svg");
-  background-position: center center;
-  opacity: 1;
+  cursor: pointer;
 }
 
 .tool-list__item-brightness + .tool-list__label-brightness {
@@ -113,10 +95,19 @@
   background-repeat: no-repeat;
   background-position: center center;
   opacity: 0.3;
+  cursor: pointer;
 }
 
-.tool-list__item-brightness:hover + .tool-list__label-brightness {
-  opacity: 0.5;
+.tool-list__item-size:checked + .tool-list__label-size {
+  background-image: url("../img/icon-editor-crop-color.svg");
+  background-position: center center;
+  opacity: 1;
+}
+
+.tool-list__item-color:checked + .tool-list__label-color {
+  background-image: url("../img/icon-editor-fill-color.svg");
+  background-position: center center;
+  opacity: 1;
 }
 
 .tool-list__item-brightness:checked + .tool-list__label-brightness {
@@ -125,7 +116,11 @@
   opacity: 1;
 }
 
-
+.tool-list__item-size:hover + .tool-list__label-size,
+.tool-list__item-color:hover + .tool-list__label-color,
+.tool-list__item-brightness:hover + .tool-list__label-brightness {
+  opacity: 0.5;
+}
 
 @media (min-width: $layout-width-tablet) {
   .tool-list {
