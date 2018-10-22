@@ -11,7 +11,7 @@
 .site-list__item {
   box-shadow: 0 1px 0 #000000,
     inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  padding: 17px 20px;
+  padding: 20px 20px;
   background-color: #283645;
 }
 
@@ -20,7 +20,7 @@
   justify-content: space-between;
 
   @include marpad;
-  padding: 21px 20px;
+  padding: 23px 20px;
 }
 
 .site-list__toggle {
@@ -71,7 +71,7 @@
 
 @media (min-width: $layout-width-tablet) {
   .site-list__item {
-    padding: 16px 20px;
+    padding: 20px 20px;
   }
 
   .site-list--second {
@@ -114,7 +114,7 @@
 
   .site-list__item:nth-of-type(3) {
     width: 115px;
-    margin-right: 75px;
+    margin-right: 80px;
   }
 
   .site-list__link {

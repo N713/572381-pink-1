@@ -21,7 +21,7 @@
 
 .table__cell {
   box-sizing: border-box;
-  padding: 6px;
+  padding: 7px;
   background-color: #ffffff;
   width: 276px;
   border: solid 1px #e5e5e5;
@@ -54,14 +54,13 @@
   margin: -2px;
   background-image: url("../img/bg-hit.svg");
   background-repeat: no-repeat;
-  background-position: 0 -15px;
 }
 
 .table__item-span {
   display: inline-block;
   position: absolute;
-  top: 9px;
-  left: 6px;
+  top: 20px;
+  left: 9px;
   font-size: 14px;
   font-style: normal;
   font-stretch: normal;
@@ -97,7 +96,6 @@
 .table__item-cost {
   margin-top: 11px;
   margin-bottom: 11px;
-  width: 98px;
   font-size: 24px;
   font-weight: 300;
   font-style: normal;
@@ -105,6 +103,7 @@
   line-height: 26px;
   letter-spacing: normal;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -141,7 +140,7 @@
   }
 
   .table__item-name {
-    margin-top: 6px;
+    margin-top: 8px;
     width: 85px;
     font-size: 16px;
     line-height: 18px;
@@ -150,7 +149,6 @@
   .table__item-cost {
     margin-top: 11px;
     margin-bottom: 5px;
-    width: 74px;
     font-size: 18px;
     line-height: 20px;
   }
@@ -162,14 +160,20 @@
 
   .table__cell,
   .table__cell--head {
-    box-sizing: border-box;
     width: 153px;
   }
 
   .table__item-hit {
+    top: 0;
+    left: 0;
     width: 61px;
     height: 61px;
-    background-position: 0 -17px;
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .table__item-span {
+    top: 11px;
+    left: 7px;
   }
 
   .table__cell-image {

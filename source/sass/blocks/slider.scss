@@ -1,16 +1,18 @@
 .slider {
   @include marpad;
   margin: 0 auto;
+  margin-top: 19px;
   list-style: none;
   display: flex;
   width: 62px;
   justify-content: space-between;
+  align-items: center;
   min-height: 12px;
+  margin-bottom: 8px;
 }
 
 .slider__item {
   display: flex;
-  margin: auto;
 }
 
 .slider__item-bullet {

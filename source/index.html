@@ -15,25 +15,25 @@
         background-repeat: no-repeat;
         background-position:  50% 0;
         /* По умолчанию мобильный макет */
-        background-image: url( "img/pink-index-mobile.png" );
+        background-image: url( "../img/pink-index-mobile.png" );
       }
       /* Планшет */
       @media ( min-width: 760px ) {
         HTML {
           /* Планшетный макет */
-          background-image: url( "img/pink-index-tablet.png" );
+          background-image: url( "../img/pink-index-tablet.png" );
         }
       }
       /* Десктоп */
       @media ( min-width: 960px ) {
         HTML {
           /* Десктопный макет */
-          background-image: url( "img/pink-index-desktop.png" );
+          background-image: url( "../img/pink-index-desktop.png" );
         }
       }
 
       BODY {
-        opacity: 1;
+        opacity: 0.5;
       }
     </style>
   <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
@@ -141,7 +141,7 @@
         <ul class="advantages__advantages-list advantage-list">
           <li class="advantage-list__item">
             <img class="advantage-list__item-image" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" alt="Телефон">
-            <h3 class="advantage-list__title">
+            <h3 class="advantage-list__title advantage-list__title--emotion">
               Поднимает настроение
             </h3>
             <p class="advantage-list__description">
@@ -150,19 +150,19 @@
           </li>
           <li class="advantage-list__item">
             <img class="advantage-list__item-image" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Телефон">
-            <h3 class="advantage-list__title">
+            <h3 class="advantage-list__title advantage-list__title--change">
               Меняет мир вокруг
             </h3>
-            <p class="advantage-list__description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            <p class="advantage-list__description advantage-list__description--change">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="advantage-list__br"> усилить эффект
             </p>
           </li>
           <li class="advantage-list__item">
             <img class="advantage-list__item-image" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" alt="Телефон">
-            <h3 class="advantage-list__title">
+            <h3 class="advantage-list__title advantage-list__title--friends">
               Заводит новых друзей
             </h3>
-            <p class="advantage-list__description">
+            <p class="advantage-list__description advantage-list__description--friends">
               Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </li>

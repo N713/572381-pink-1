@@ -1,9 +1,17 @@
 .contact-list {
   margin: 0;
-  margin-top: 44px;
+  margin-top: 34px;
   padding: 0;
   list-style: none;
   text-align: center;
+}
+
+.contact-list__item {
+  margin-bottom: 18px;
+}
+
+.contact-list__item--write {
+  margin-bottom: 20px;
 }
 
 .contact-list__item-name {
@@ -17,6 +25,8 @@
   font-size: 24px;
   font-weight: light;
   text-align: center;
+  margin: 0;
+  font-weight: 300;
 }
 
 .contact-list__item-info-br {
@@ -43,14 +53,33 @@
   .contact-list {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
-    margin-top: 57px;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: start;
   }
 
   .contact-list__item {
-    width: 330px;
+    width: 240px;
     flex-shrink: 0;
+    margin: 0;
+  }
+
+  .contact-list__item--call {
+    margin-left: 30px;
+  }
+
+  .contact-list__item--write {
+    margin-right: 30px;
+  }
+
+  .contact-list__item--go {
     margin: 0 auto;
+    margin-top: 45px;
+  }
+
+  .contact-list__item-info {
+    margin-top: 3px;
+    line-height: 32px;
   }
 }
 
