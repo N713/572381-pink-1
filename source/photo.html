@@ -33,7 +33,7 @@
       }
 
       BODY {
-        opacity: 0.5;
+        opacity: 0.4;
       }
     </style>
   <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
@@ -111,7 +111,7 @@
         <ul class="photos__photos-list photo-list">
           <li class="photo-list__item photo-list__item--full">
             <div class="photo-list__item-wrapper">
-              <a href="../img/panorama-desktop@2x.jpg">
+              <a class="photo-list__link-day" href="../img/panorama-desktop@2x.jpg">
                 <picture class="photo-list__picture">
                   <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                   <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
@@ -122,7 +122,7 @@
                 <span class="photo-list__item-day-span">Панорама дня</span>
               </p>
                 <div class="photo-list__paragraph-wrapper">
-                  <p class="photo-list__item-name">Анна
+                  <p class="photo-list__item-name photo-list__item-name--day">Анна
                     <span class="photo-list__item-time">(5 минут назад)</span>
                   </p>
                   <p class="photo-list__item-comment">
@@ -130,6 +130,7 @@
                   </p>
                   <div class="photo-list__social-response photo-list__social-response--absolute">
                     <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+                    <div class="photo__like-icon photo__like-icon--day"></div>
                     <label class="photo-list__item-like-number photo-list__item-like-number--absolute" for="like-check">Нравится:
                       <span class="photo-list__like-count">215</span>
                     </label>
@@ -140,7 +141,7 @@
         </ul>
         <ul class="photos__photos-list photo-list photo-list--other">
           <li class="photo-list__item">
-            <a href="../img/photo-car-desktop@2x.jpg">
+            <a class="photo-list__link" href="../img/photo-car-desktop@2x.jpg">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
@@ -155,13 +156,14 @@
             </p>
             <div class="photo-list__social-response">
               <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <div class="photo__like-icon"></div>
               <label class="photo-list__item-like-number" for="like-check">Нравится:
                 <span class="photo-list__like-count">356</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <a href="../img/photo-drumset-desktop@2x.jpg">
+            <a class="photo-list__link" href="../img/photo-drumset-desktop@2x.jpg">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
@@ -176,13 +178,14 @@
             </p>
             <div class="photo-list__social-response">
               <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <div class="photo__like-icon"></div>
               <label class="photo-list__item-like-number" for="like-check">Нравится:
                 <span class="photo-list__like-count">666</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <a href="../img/photo-window-desktop@2x.jpg">
+            <a class="photo-list__link" href="../img/photo-window-desktop@2x.jpg">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
@@ -197,13 +200,14 @@
             </p>
             <div class="photo-list__social-response">
               <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <div class="photo__like-icon"></div>
               <label class="photo-list__item-like-number" for="like-check">Нравится:
                 <span class="photo-list__like-count">215</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <a href="../img/photo-fair-desktop@2x.jpg">
+            <a class="photo-list__link" href="../img/photo-fair-desktop@2x.jpg">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
@@ -218,13 +222,14 @@
             </p>
             <div class="photo-list__social-response">
               <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <div class="photo__like-icon"></div>
               <label class="photo-list__item-like-number" for="like-check">Нравится:
                 <span class="photo-list__like-count">4</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <a href="../img/photo-pov-desktop@2x.jpg">
+            <a class="photo-list__link" href="../img/photo-pov-desktop@2x.jpg">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
@@ -239,13 +244,14 @@
             </p>
             <div class="photo-list__social-response">
               <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <div class="photo__like-icon"></div>
               <label class="photo-list__item-like-number" for="like-check">Нравится:
                 <span class="photo-list__like-count">150</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <a href="../img/photo-wing-desktop@2x.jpg">
+            <a class="photo-list__link" href="../img/photo-wing-desktop@2x.jpg">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
@@ -260,6 +266,7 @@
             </p>
             <div class="photo-list__social-response">
               <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <div class="photo__like-icon"></div>
               <label class="photo-list__item-like-number" for="like-check">Нравится:
                 <span class="photo-list__like-count">2560</span>
               </label>
@@ -271,10 +278,10 @@
         <p class="after-photos__paragraph">Затмите их всех!</p>
         <p class="after-photos__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <section >
-        <form class="editor" action="https://echo.htmlacademy.ru" method="get">
+      <section class="editor">
+        <form class="editor__form" action="https://echo.htmlacademy.ru" method="get">
           <div class="editor__field">
-            <a href="../img/photo-road-mobile@2x.jpg">
+            <a class="editor__link" href="../img/photo-road-mobile@2x.jpg">
               <picture class="editor__picture">
                 <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">

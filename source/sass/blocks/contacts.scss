@@ -34,10 +34,14 @@
 @media (min-width: $layout-width-desktop) {
   .contacts {
     margin-bottom: -2px;
+    padding-top: 70px;
   }
 
   .contacts__paragraph {
+    margin: 0;
+    margin-bottom: 10px;
     font-size: 50px;
+    line-height: 50px;
   }
 
   .contact-list__item--call {

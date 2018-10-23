@@ -32,3 +32,10 @@
     display: none;
   }
 }
+
+@media (min-width: $layout-width-desktop) {
+  .using-plan {
+    padding-top: 150px;
+    padding-bottom: 95px;
+  }
+}

@@ -84,7 +84,22 @@
 }
 
 @media (min-width: $layout-width-desktop) {
+  .contact-list {
+    margin-top: 50px;
+    padding: 0 140px;
+  }
+
+  .contact-list__item-info {
+    margin-top: 23px;
+  }
+
   .contact-list__item-info-br {
     display: block;
+  }
+
+  .contact-list__item--call,
+  .contact-list__item--write,
+  .contact-list__item--go {
+    margin: 0;
   }
 }

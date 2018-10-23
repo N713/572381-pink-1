@@ -43,6 +43,7 @@
 @media (min-width: $layout-width-desktop) {
   .map {
     min-height: 522px;
+    margin-top: -135px;
   }
 
   .map__iframe {

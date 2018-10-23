@@ -189,7 +189,6 @@
 
   .table__cell,
   .table__cell--head {
-    box-sizing: border-box;
     width: 233px;
   }
 
@@ -198,5 +197,33 @@
     vertical-align: middle;
     font-size: 18px;
     line-height: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+  }
+
+  .table__item-name {
+    width: 100px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .table__item-cost {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .table__item-hit {
+    width: 74px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
+    background-size: cover;
+  }
+
+  .table__item-span {
+    top: 20px;
+    left: 10px;
   }
 }

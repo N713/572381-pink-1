@@ -1,9 +1,7 @@
 .after-photos {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-  padding-top: 49px;
-  padding-bottom: 48px;
+  padding: 42px 20px;
 }
 
 .after-photos__paragraph {
@@ -18,12 +16,16 @@
 @media (min-width: $layout-width-tablet) {
   .after-photos {
     width: $layout-width-tablet;
-    padding-top: 74px;
-    padding-bottom: 72px;
+    padding-top: 64px;
+    padding-bottom: 70px;
   }
 
   .after-photos__paragraph {
     font-size: 18px;
     margin: 0 auto;
   }
+}
+
+@media (min-width: $layout-width-desktop) {
+
 }

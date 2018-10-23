@@ -6,6 +6,11 @@
   margin: 0 auto;
 }
 
+.range--total {
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
 .range__togler {
   position: absolute;
   top: -6px;
@@ -24,6 +29,11 @@
 }
 
 @media (min-width: $layout-width-tablet) {
+  .range {
+    margin-left: 30px;
+    margin-bottom: 18px;
+  }
+
   .range--total {
     display: none;
   }
@@ -35,12 +45,17 @@
     width: 202px;
   }
 
+  .range--color,
+  .range--brightness {
+    margin-bottom: 0;
+  }
+
   .range__togler--size {
     right: 42px;
   }
 
   .range__togler--color {
-    right: 25px;
+    left: 25px;
   }
 
   .range__togler--brightness {

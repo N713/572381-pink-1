@@ -1,5 +1,16 @@
 @media (min-width: $layout-width-mobile) {
   .editor {
+    padding: 0 20px;
+    padding-bottom: 10px;
+    background-color: #f2f2f2;
+  }
+
+  .editor__link {
+    display: block;
+    height: 374px;
+  }
+
+  .editor__form {
     background-color: #f2f2f2;
     box-sizing: border-box;
     margin: 0;
@@ -28,11 +39,21 @@
 }
 
 @media (min-width: $layout-width-tablet) {
+  .editor {
+    padding: 0;
+    padding-bottom: 34px;
+  }
+
+  .editor__link {
+    height: 400px;
+  }
+
   .editor__field {
     display: flex;
     flex-direction: row;
+    padding-top: 0;
+    padding-left: 20px;
     margin-top: 57px;
-    margin-bottom: 54px;
   }
 
   .editor__image {
