@@ -40,6 +40,7 @@
 
 @media (min-width: $layout-width-tablet) {
   .editor {
+    width: $layout-width-tablet;
     padding: 0;
     padding-bottom: 34px;
   }
@@ -63,6 +64,7 @@
   }
 
   .editor__wrapper {
+    width: 322px;
     display: flex;
     flex-direction: column;
     margin-right: 20px;
@@ -89,6 +91,7 @@
   }
 
   .editor__wrapper {
+    width: 410px;
     margin-right: 60px;
   }
 }
