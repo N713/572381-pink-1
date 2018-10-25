@@ -27,5 +27,8 @@
 }
 
 @media (min-width: $layout-width-desktop) {
-
+  .after-photos {
+    padding-top: 7px;
+    padding-bottom: 66px;
+  }
 }

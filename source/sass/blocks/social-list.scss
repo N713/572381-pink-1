@@ -54,10 +54,22 @@
     margin-top: 5px;
     margin-right: 20px;
   }
+
+  .social-list--form {
+    margin-top: 0;
+    margin-right: 18px;
+  }
 }
 
 @media (min-width: $layout-width-desktop) {
   .social-list {
     margin: 0;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  .social-list--photo {
+    margin-left: 15px;
+    margin-bottom: 5px;
   }
 }

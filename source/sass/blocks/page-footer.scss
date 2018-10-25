@@ -105,18 +105,28 @@
     padding: 0 130px;
   }
 
+  .page-footer--form {
+    margin-top: -45px;
+  }
+
   .page-footer__logo {
     margin: 0;
     margin-bottom: 30px;
   }
 
-  .page-footer__developer {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-
   .page-footer__developed {
     font-size: 18px;
+  }
+
+  .page-footer__developed--photo {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .page-footer__developer {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   .page-footer__developer-logo {

@@ -60,6 +60,10 @@
     line-height: 60px;
     margin-bottom: 140px;
   }
+
+  .page-header__title--form {
+    margin-bottom: 108px;
+  }
 }
 
 @media (min-width: $layout-width-desktop) {
@@ -73,11 +77,11 @@
   }
 
   .page-header__describe {
-    padding-top: 74px;
+    padding-top: 64px;
   }
 
   .page-header__title {
-    margin-bottom: 111px;
+    margin-bottom: 100px;
   }
 
   .page-header__title--form {

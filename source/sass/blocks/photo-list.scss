@@ -234,15 +234,31 @@
 }
 
 @media (min-width: $layout-width-desktop) {
+  .photo-list {
+    margin-bottom: 25px;
+  }
+
   .photo-list__paragraph-wrapper {
     width: 940px;
     margin-right: 130px;
     margin-left: 130px;
   }
 
+  .photo-list__link {
+    height: 400px;
+  }
+
+  .photo-list__link-day {
+    height: 506px;
+  }
+
   .photo-list__image--full {
     width: auto;
     height: auto;
+  }
+
+  .photo__like-icon--day {
+    margin-left: 20px;
   }
 
   .photo-list__item-paragraph-day {
@@ -251,12 +267,13 @@
   }
 
   .photo-list--other {
+    margin-bottom: 0px;
     padding: 0 130px;
     justify-content: space-between;
   }
 
   .photo-list--other .photo-list__item {
     margin: 0;
-    margin-top: 50px;
+    margin-bottom: 53px;
   }
 }

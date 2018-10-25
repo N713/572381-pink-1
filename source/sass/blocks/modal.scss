@@ -1,0 +1,157 @@
+.modal {
+  margin: 0 auto;
+  padding: 0;
+  width: $layout-width-mobile;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__b {
+  color: #000000;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: $font-bold;
+  margin-top: 46px;
+  margin-bottom: 30px;
+}
+
+.modal__paragraph {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  color: $color-main;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: $font-regular;
+  line-height: 24px;
+  text-align: center;
+}
+
+.modal__paragraph br {
+  display: none;
+}
+
+.modal__paragraph--failure {
+  margin: 0;
+  padding: 0;
+}
+
+.modal__button-wrapper {
+  margin: 0;
+  padding: 0;
+  width: $layout-width-mobile;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+}
+
+.modal__button {
+  margin-top: 50px;
+  margin-bottom: 54px;
+  color: #ffffff;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: $font-bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.modal__button-wrapper--failure {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+@media(min-width: $layout-width-tablet) {
+  .modal {
+    width: 464px;
+    box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  }
+
+  .modal__b {
+    width: 225px;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .modal__paragraph {
+    font-size: 18px;
+    font-weight: $font-regular;
+    font-family: $font-family;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 80px;
+  }
+
+  .modal__paragraph br {
+    display: block;
+  }
+
+  .modal__button-wrapper {
+    width: 100%;
+    margin-top: 38px;
+    padding-top: 50px;
+    padding-bottom: 54px;
+  }
+
+  .modal__button {
+    width: 295px;
+    height: 59px;
+    margin: 0;
+  }
+
+  .modal__button--failure {
+    margin-top: 44px;
+    margin-bottom: 56px;
+  }
+
+  .modal__button-wrapper--failure {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media(min-width: $layout-width-desktop) {
+  .modal {
+    width: 782px;
+  }
+
+  .modal__b {
+    width: auto;
+  }
+
+  .modal__paragraph {
+    width: 400px;
+  }
+
+  .modal__paragraph br {
+    display: none;
+  }
+
+  .modal__button-wrapper {
+    min-height: 163px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 39px;
+  }
+
+  .modal__button {
+    width: 456px;
+    height: 59px;
+  }
+
+  .modal__button-wrapper--failure {
+    background-color: #f2f2f2;
+    margin-top: 62px;
+  }
+
+  .modal__button--failure {
+    width: 296px;
+  }
+}

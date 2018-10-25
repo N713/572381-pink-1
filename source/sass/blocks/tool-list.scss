@@ -191,21 +191,47 @@
   .tool-list {
     flex-direction: column;
     flex-grow: 0;
+    margin: 0;
+  }
+
+  .tool-list__group {
     width: 410px;
   }
 
   .tool-list__item-size + .tool-list__label-size {
     width: 44px;
     height: 44px;
+    margin-top: 0;
+    margin-bottom: 11px;
   }
 
   .tool-list__item-color + .tool-list__label-color {
     width: 48px;
     height: 43px;
+    margin-top: 17px;
+    margin-bottom: 12px;
   }
 
   .tool-list__item-brightness + .tool-list__label-brightness {
     width: 32px;
     height: 32px;
+    margin-top: 18px;
+    margin-bottom: 19px;
   }
+
+  .tool-list__button {
+    width: 183px;
+    margin: 0;
+  }
+
+  .tool-list__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 410;
+    margin: 0;
+  }
+}
+
+.--active {
+  background-color: #d22856;
 }

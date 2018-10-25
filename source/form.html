@@ -105,9 +105,11 @@
       </header>
     </div>
     <main class="form-main">
-      <p class="form-main__paragraph">
-        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-      </p>
+      <div class="form-main__wrapper">
+        <span class="form-main__paragraph">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="form-main__please"> Пожалуйста, заполните форму ниже:</span>
+        </span>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__username">
           <legend class="visually-hidden">Пожалуйста, заполните</legend>
@@ -127,29 +129,41 @@
         <fieldset class="form__user-achievements">
           <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__achievements-list achievement-list">
-            <li class="achievement-list__item">
+            <li class="achievement-list__item achievement-list__item--shark">
               <input class="form__input-check" type="checkbox" name="selfie-shark" id="shark" checked>
-              <label class="form__label" for="shark">Сделал селфи с акулой</label>
+              <label class="form__label" for="shark">
+                <span class="form__span">Сделал селфи с акулой</span>
+              </label>
             </li>
-            <li class="achievement-list__item">
+            <li class="achievement-list__item achievement-list__item--burned">
               <input class="form__input-check" type="checkbox" name="self-burned" id="burned" checked>
-              <label class="form__label" for="burned">Обгорел на пляже</label>
+              <label class="form__label" for="burned">
+                <span class="form__span">Обгорел на пляже</span>
+              </label>
             </li>
-            <li class="achievement-list__item">
+            <li class="achievement-list__item achievement-list__item--chuck">
               <input class="form__input-check" type="checkbox" name="see-chuck" id="chuck">
-              <label class="form__label" for="chuck">Видел Чака Норриса</label>
+              <label class="form__label" for="chuck">
+                <span class="form__span">Видел Чака Норриса</span>
+              </label>
             </li>
-            <li class="achievement-list__item">
+            <li class="achievement-list__item achievement-list__item--gifts">
               <input class="form__input-check" type="checkbox" name="buy-souvenir" id="souvenir">
-              <label class="form__label" for="souvenir">Накупил сувениров</label>
+              <label class="form__label" for="souvenir">
+                <span class="form__span">Накупил сувениров</span>
+              </label>
             </li>
-            <li class="achievement-list__item">
+            <li class="achievement-list__item achievement-list__item--fort">
               <input class="form__input-check" type="checkbox" name="save-fort" id="fort" checked>
-              <label class="form__label" for="fort">Удержал башню</label>
+              <label class="form__label" for="fort">
+                <span class="form__span">Удержал башню</span>
+              </label>
             </li>
-            <li class="achievement-list__item">
+            <li class="achievement-list__item achievement-list__item--hotel">
               <input class="form__input-check" type="checkbox" name="hotel-crashed" id="crash">
-              <label class="form__label" for="crash">Разгромил отель</label>
+              <label class="form__label" for="crash">
+                <span class="form__span">Разгромил отель</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -171,15 +185,21 @@
           <ul class="form__applications-list application-list">
             <li class="application-list__item">
               <input class="form__input-radio" type="radio" name="system-type" id="ios" value="iOs">
-              <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
+              <label class="form__label form__label--radio" for="ios">
+                <span class="form__span form__span--radio">Pink для iOS</span>
+              </label>
             </li>
             <li class="application-list__item">
               <input class="form__input-radio" type="radio" name="system-type" id="android" value="android">
-              <label class="form__label form__label--radio" for="android">Pink на Android</label>
+              <label class="form__label form__label--radio" for="android">
+                <span class="form__span form__span--radio">Pink на Android</span>
+              </label>
             </li>
             <li class="application-list__item">
               <input class="form__input-radio" type="radio" name="system-type" id="windows-phone" value="windows-phone">
-              <label class="form__label form__label--radio" for="windows-phone">Windows Phone</label>
+              <label class="form__label form__label--radio" for="windows-phone">
+                <span class="form__span form__span--radio">Windows Phone</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -190,25 +210,11 @@
         </fieldset>
         <div class="form__button-wrap">
           <button class="form__submit button" type="submit">Отправить форму</button>
-          <p class="form__required-paragraph"><sup class="form__sup">*</sup> — обязательные поля</p>
+          <p class="form__required-paragraph"><sup class="form__sup">*</sup> — обязательные <span>для заполнения</span> поля</p>
         </div>
       </form>
-      <div class="form__send">
-        <b class="form__send-b">Ваша заявка отправлена</b>
-        <p class="form__send-paragraph">Спасибо за ваше участие, ваша<br> заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        <div class="form__send-button-wrapper">
-          <button class="form__send-button button">Закрыть окно</button>
-        </div>
-      </div>
-      <div class="form__send">
-        <b class="form__send-b">Что-то пошло не так!</b>
-        <p class="form__send-paragraph form__send-paragraph--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <div class="form__send-button-wrapper form__send-button-wrapper--failure">
-          <button class="form__send-button form__send-button--failure button">ok</button>
-        </div>
-      </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__logo">
         <a class="page-footer__logo-link" href="index.html">
           <svg class="logo-blue logo-pink__blue" xmlns="http://www.w3.org/2000/svg" width="146" height="41">
@@ -228,7 +234,7 @@
           </svg>
         </a>
       </div>
-      <ul class="page-footer__socials-list social-list">
+      <ul class="page-footer__socials-list social-list social-list--form">
         <li class="social-list__item">
           <a class="social-list__link social-list__link--twitter" href="https://twitter.com/">
             <span class="visually-hidden">twitter</span>
@@ -255,5 +261,19 @@
         </a>
       </div>
     </footer>
+    <div class="modal">
+      <b class="modal__b">Ваша заявка отправлена</b>
+      <p class="modal__paragraph">Спасибо за ваше участие, ваша<br> заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <div class="modal__button-wrapper">
+        <button class="modal__button button">Закрыть окно</button>
+      </div>
+    </div>
+    <div class="modal">
+      <b class="modal__b">Что-то пошло не так!</b>
+      <p class="modal__paragraph modal__paragraph--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__button-wrapper modal__button-wrapper--failure">
+        <button class="modal__button modal__button--failure button">ok</button>
+      </div>
+    </div>
   </body>
 </html>
