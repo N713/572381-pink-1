@@ -5,39 +5,11 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script type="text/javascript">
+    <script>
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.js" async=""></script>
     <!-- Рекомендация разработчика подключить именно в <head>. http://scottjehl.github.io/picturefill/ -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию мобильный макет */
-        background-image: url( "../img/pink-form-mobile.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 760px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "../img/pink-form-tablet.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 960px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "../img/pink-form-desktop.png" );
-        }
-      }
-
-      BODY {
-        opacity: 0.5;
-      }
-    </style>
-  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-  <script src="../node_modules/pixel-glass/script.js"></script>
   </head>
   <body>
     <div class="page-header__wrapper">
@@ -176,7 +148,7 @@
             </p>
             <p class="form__mail">
               <label class="form__label form__label--red" for="mail">Адрес почты</label>
-              <input class="form__input" type="e-mail" id="mail" name="e-mail" placeholder="Введите почту*" required="">
+              <input class="form__input" type="email" id="mail" name="e-mail" placeholder="Введите почту*" required="">
             </p>
           </div>
         </fieldset>

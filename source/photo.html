@@ -5,39 +5,11 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script type="text/javascript">
+    <script>
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.js" async=""></script>
     <!-- Рекомендация разработчика подключить именно в <head>. http://scottjehl.github.io/picturefill/ -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию мобильный макет */
-        background-image: url( "img/pink-photo-mobile.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 760px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "img/pink-photo-tablet.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 960px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "img/pink-photo-desktop.png" );
-        }
-      }
-
-      BODY {
-        opacity: 0.4;
-      }
-    </style>
-  <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
-  <script src="../node_modules/pixel-glass/script.js"></script>
   </head>
   <body>
     <div class="page-header__wrapper">
@@ -89,7 +61,7 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <span class="site-list__link site-list__link--active"">Фотографии</span>
+              <span class="site-list__link site-list__link--active">Фотографии</span>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Конкурс</a>
@@ -129,9 +101,9 @@
                     Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                   </p>
                   <div class="photo-list__social-response photo-list__social-response--absolute">
-                    <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+                    <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check1" checked>
                     <div class="photo__like-icon photo__like-icon--day"></div>
-                    <label class="photo-list__item-like-number photo-list__item-like-number--absolute" for="like-check">Нравится:
+                    <label class="photo-list__item-like-number photo-list__item-like-number--absolute" for="like-check1">Нравится:
                       <span class="photo-list__like-count">215</span>
                     </label>
                   </div>
@@ -155,9 +127,9 @@
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check2" checked>
               <div class="photo__like-icon"></div>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <label class="photo-list__item-like-number" for="like-check2">Нравится:
                 <span class="photo-list__like-count">356</span>
               </label>
             </div>
@@ -177,9 +149,9 @@
               Соседи будут рады!
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check3" checked>
               <div class="photo__like-icon"></div>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <label class="photo-list__item-like-number" for="like-check3">Нравится:
                 <span class="photo-list__like-count">666</span>
               </label>
             </div>
@@ -199,9 +171,9 @@
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check4" checked>
               <div class="photo__like-icon"></div>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <label class="photo-list__item-like-number" for="like-check4">Нравится:
                 <span class="photo-list__like-count">215</span>
               </label>
             </div>
@@ -221,9 +193,9 @@
               Самая кубанская в мире!
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check5" checked>
               <div class="photo__like-icon"></div>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <label class="photo-list__item-like-number" for="like-check5">Нравится:
                 <span class="photo-list__like-count">4</span>
               </label>
             </div>
@@ -243,9 +215,9 @@
               Где снег-то?
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check6" checked>
               <div class="photo__like-icon"></div>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <label class="photo-list__item-like-number" for="like-check6">Нравится:
                 <span class="photo-list__like-count">150</span>
               </label>
             </div>
@@ -265,9 +237,9 @@
               Всем GM и взаимные лайки!
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check7" checked>
               <div class="photo__like-icon"></div>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <label class="photo-list__item-like-number" for="like-check7">Нравится:
                 <span class="photo-list__like-count">2560</span>
               </label>
             </div>
@@ -279,6 +251,7 @@
         <p class="after-photos__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <section class="editor">
+        <h3 class="visually-hidden">Редактор</h3>
         <form class="editor__form" action="https://echo.htmlacademy.ru" method="get">
           <div class="editor__field">
             <a class="editor__link" href="../img/photo-road-mobile@2x.jpg">
@@ -325,7 +298,7 @@
             </div>
           </div>
         </form>
-      <section>
+      </section>
     </main>
     <footer class="page-footer page-footer--index">
       <div class="page-footer__logo">
