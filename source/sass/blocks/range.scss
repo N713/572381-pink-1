@@ -1,0 +1,97 @@
+.range {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
+  margin: 0 auto;
+}
+
+.range--total {
+  margin: 0 auto;
+  margin-top: 34px;
+}
+
+.range__togler {
+  position: absolute;
+  top: -6px;
+  right: 33px;
+  width: 10px;
+  height: 10px;
+  border: solid 2px #d22856;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+}
+
+.range--size,
+.range--color,
+.range--brightness {
+  display: none;
+}
+
+@media (min-width: $layout-width-tablet) {
+  .range {
+    margin-left: 30px;
+    margin-bottom: 18px;
+  }
+
+  .range--total {
+    display: none;
+  }
+
+  .range--size,
+  .range--color,
+  .range--brightness {
+    position: relative;
+    display: block;
+    width: 202px;
+  }
+
+  .range--color,
+  .range--brightness {
+    margin-bottom: 0;
+  }
+
+  .range__togler--size {
+    right: 42px;
+  }
+
+  .range__togler--color {
+    left: 25px;
+  }
+
+  .range__togler--brightness {
+    right: 92px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .range {
+    width: 288px;
+    margin-bottom: 0;
+  }
+
+  .range--size {
+    margin-left: 46px;
+    margin-bottom: 14px;
+  }
+
+  .range--color {
+    margin-left: 44px;
+  }
+
+  .range--brightness {
+    margin-left: 54px;
+  }
+
+  .range__togler--size {
+    left: 70px;
+  }
+
+  .range__togler--color {
+    left: 247px;
+  }
+
+  .range__togler--brightness {
+    right: 114px;
+  }
+}

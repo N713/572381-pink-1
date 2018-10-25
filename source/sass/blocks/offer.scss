@@ -1,5 +1,6 @@
 .offer {
-  padding-top: 46px;
+  padding-top: 38px;
+  margin-bottom: -30px;
 }
 
 .offer__paragraph {
@@ -7,24 +8,25 @@
   font-weight: 300;
   font-style: normal;
   font-stretch: normal;
-  line-height: normal;
+  line-height: 30px;
   letter-spacing: normal;
   text-align: center;
   color: #283645;
 
   @include marpad;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: $layout-width-tablet) {
   .offer {
-    padding-top: 59px;
-    padding-bottom: 20px;
+    padding-top: 48px;
+    padding-bottom: 22px;
     margin-bottom: -2px;
   }
 
   .offer__paragraph {
     font-size: 40px;
+    line-height: 48px;
 
     @include marpad;
   }

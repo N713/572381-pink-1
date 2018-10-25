@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async=""></script>
+    <!-- Рекомендация разработчика подключить именно в <head>. http://scottjehl.github.io/picturefill/ -->
   </head>
   <body>
     <div class="page-header__wrapper">
@@ -12,7 +17,7 @@
         <nav class="page-header__navigation page-header__navigation--opened">
           <ul class="page-header__navigation-list site-list">
             <li class="site-list__item site-list__item--double">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="index.html">
                 <svg class="logo-pink__mobile" xmlns="http://www.w3.org/2000/svg" width="75" height="23">
                   <path class="logo-pink" d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0 1 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z"/>
                 </svg>
@@ -43,7 +48,7 @@
                   </g>
                 </svg>
               </button>
-              <button class="site-list__toggle site-list__toggle-opened" type="button">
+              <button class="site-list__toggle site-list__toggle-opened none" type="button">
                 <span class="visually-hidden">
                   Открыть
                 </span>
@@ -56,13 +61,13 @@
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <span class="site-list__link site-list__link--active"">Фотографии</span>
+              <span class="site-list__link site-list__link--active">Фотографии</span>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -78,22 +83,27 @@
         <ul class="photos__photos-list photo-list">
           <li class="photo-list__item photo-list__item--full">
             <div class="photo-list__item-wrapper">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="photo-list__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
-              </picture>
-              <p class="photo-list__item-paragraph-day">Панорама дня</p>
+              <a class="photo-list__link-day" href="../img/panorama-desktop@2x.jpg">
+                <picture class="photo-list__picture">
+                  <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                  <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                  <img class="photo-list__image photo-list__image--full" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+                </picture>
+              </a>
+              <p class="photo-list__item-paragraph-day">
+                <span class="photo-list__item-day-span">Панорама дня</span>
+              </p>
                 <div class="photo-list__paragraph-wrapper">
-                  <p class="photo-list__item-name">Анна
+                  <p class="photo-list__item-name photo-list__item-name--day">Анна
                     <span class="photo-list__item-time">(5 минут назад)</span>
                   </p>
                   <p class="photo-list__item-comment">
                     Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                   </p>
                   <div class="photo-list__social-response photo-list__social-response--absolute">
-                    <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
-                    <label class="photo-list__item-like-number photo-list__item-like-number--absolute" for="like-check">Нравится:
+                    <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check1" checked>
+                    <div class="photo__like-icon photo__like-icon--day"></div>
+                    <label class="photo-list__item-like-number photo-list__item-like-number--absolute" for="like-check1">Нравится:
                       <span class="photo-list__like-count">215</span>
                     </label>
                   </div>
@@ -103,11 +113,13 @@
         </ul>
         <ul class="photos__photos-list photo-list photo-list--other">
           <li class="photo-list__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-              <img class="photo-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Автомобиль">
-            </picture>
+            <a class="photo-list__link" href="../img/photo-car-desktop@2x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Автомобиль">
+              </picture>
+            </a>
             <p class="photo-list__item-name">Левон
               <span class="photo-list__item-time">(5 часов назад)</span>
             </p>
@@ -115,18 +127,21 @@
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check2" checked>
+              <div class="photo__like-icon"></div>
+              <label class="photo-list__item-like-number" for="like-check2">Нравится:
                 <span class="photo-list__like-count">356</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-              <img class="photo-list__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Автомобиль">
-            </picture>
+            <a class="photo-list__link" href="../img/photo-drumset-desktop@2x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Автомобиль">
+              </picture>
+            </a>
             <p class="photo-list__item-name">Антон
               <span class="photo-list__item-time">(12 часов назад)</span>
             </p>
@@ -134,18 +149,21 @@
               Соседи будут рады!
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check3" checked>
+              <div class="photo__like-icon"></div>
+              <label class="photo-list__item-like-number" for="like-check3">Нравится:
                 <span class="photo-list__like-count">666</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-              <img class="photo-list__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Автомобиль">
-            </picture>
+            <a class="photo-list__link" href="../img/photo-window-desktop@2x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Автомобиль">
+              </picture>
+            </a>
             <p class="photo-list__item-name">Борис
               <span class="photo-list__item-time">(20 часов назад)</span>
             </p>
@@ -153,18 +171,21 @@
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check4" checked>
+              <div class="photo__like-icon"></div>
+              <label class="photo-list__item-like-number" for="like-check4">Нравится:
                 <span class="photo-list__like-count">215</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-              <img class="photo-list__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Автомобиль">
-            </picture>
+            <a class="photo-list__link" href="../img/photo-fair-desktop@2x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Автомобиль">
+              </picture>
+            </a>
             <p class="photo-list__item-name">Сергей
               <span class="photo-list__item-time">(25 часов назад)</span>
             </p>
@@ -172,18 +193,21 @@
               Самая кубанская в мире!
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check5" checked>
+              <div class="photo__like-icon"></div>
+              <label class="photo-list__item-like-number" for="like-check5">Нравится:
                 <span class="photo-list__like-count">4</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-              <img class="photo-list__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Автомобиль">
-            </picture>
+            <a class="photo-list__link" href="../img/photo-pov-desktop@2x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Автомобиль">
+              </picture>
+            </a>
             <p class="photo-list__item-name">Максим
               <span class="photo-list__item-time">(40 часов назад)</span>
             </p>
@@ -191,18 +215,21 @@
               Где снег-то?
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check6" checked>
+              <div class="photo__like-icon"></div>
+              <label class="photo-list__item-like-number" for="like-check6">Нравится:
                 <span class="photo-list__like-count">150</span>
               </label>
             </div>
           </li>
           <li class="photo-list__item">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-              <img class="photo-list__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Автомобиль">
-            </picture>
+            <a class="photo-list__link" href="../img/photo-wing-desktop@2x.jpg">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Автомобиль">
+              </picture>
+            </a>
             <p class="photo-list__item-name">Надежда
               <span class="photo-list__item-time">(45 часов назад)</span>
             </p>
@@ -210,8 +237,9 @@
               Всем GM и взаимные лайки!
             </p>
             <div class="photo-list__social-response">
-              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check" checked>
-              <label class="photo-list__item-like-number" for="like-check">Нравится:
+              <input class="photo__like-check" type="checkbox" name="like-checkbox" id="like-check7" checked>
+              <div class="photo__like-icon"></div>
+              <label class="photo-list__item-like-number" for="like-check7">Нравится:
                 <span class="photo-list__like-count">2560</span>
               </label>
             </div>
@@ -222,63 +250,102 @@
         <p class="after-photos__paragraph">Затмите их всех!</p>
         <p class="after-photos__paragraph">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <section >
-        <form class="editor" action="https://echo.htmlacademy.ru" method="get">
+      <section class="editor">
+        <h3 class="visually-hidden">Редактор</h3>
+        <form class="editor__form" action="https://echo.htmlacademy.ru" method="get">
           <div class="editor__field">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-              <img class="photo-list__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Автомобиль">
-            </picture>
+            <a class="editor__link" href="../img/photo-road-mobile@2x.jpg">
+              <picture class="editor__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+                <img class="photo-list__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Автомобиль">
+              </picture>
+            </a>
             <div class="editor__wrapper">
               <ul class="editor__tools-list tool-list">
                 <li class="tool-list__group">
-                  <input class="tool-item" type="checkbox" name="size-edit" id="edit-size" checked>
-                  <label for="edit-size">icon</label>
-                  <input class="tool-item-range" type="range" min="1" max="10">
+                  <input class="tool-list__item-size" type="checkbox" name="size-edit" id="edit-size" checked>
+                  <label class="tool-list__label-size" for="edit-size"></label>
+                  <div class="range range--size">
+                    <div class="range__togler range__togler--size"></div>
+                  </div>
                 </li>
                 <li class="tool-list__group">
-                  <input class="tool-item" type="checkbox" name="color-edit" id="edit-color">
-                  <label for="edit-color">icon</label>
-                  <input class="tool-item-range" type="range" min="1" max="10">
+                  <input class="tool-list__item-color" type="checkbox" name="color-edit" id="edit-color">
+                  <label class="tool-list__label-color" for="edit-color"></label>
+                  <div class="range range--color">
+                    <div class="range__togler range__togler--color"></div>
+                  </div>
                 </li>
                 <li class="tool-list__group">
-                  <input class="tool-item" type="checkbox" name="brightness-edit" id="edit-brightness">
-                  <label for="edit-brightness">icon</label>
-                  <input class="tool-item-range" type="range" min="1" max="10">
+                  <input class="tool-list__item-brightness" type="checkbox" name="brightness-edit" id="edit-brightness">
+                  <label class="tool-list__label-brightness" for="edit-brightness"></label>
+                  <div class="range range--brightness">
+                    <div class="range__togler range__togler--brightness"></div>
+                  </div>
                 </li>
               </ul>
-              <ul class="tool-list__lone">
-                <li class="tool-list__lone-item">
-                  <input class="tool-list__lone-range" type="range" min="1" max="10">
-                </li>
-              </ul>
+              <div class="range range--total">
+                <div class="range__togler"></div>
+              </div>
               <ul class="tool-list__buttons">
                 <li class="tool-list__buttons-item">
-                  <button class="buttons-list__button button" type="submit">Запостить</button>
+                  <button class="tool-list__button" type="submit">Запостить</button>
                 </li>
                 <li class="tool-list__buttons-item">
-                  <button class="buttons-list__button button" type="reset">Отмена</button>
+                  <button class="tool-list__button tool-list__button--cancel" type="reset">Отмена</button>
               </ul>
             </div>
           </div>
         </form>
-      <section>
-      <footer class="page-footer">
-        <div class="page-footer__logo">
-          <span class="page-footer__logo-image">Logo</span>
-          <span class="page-footer__logo-name"><a href="#">Pink</a></span>
-        </div>
-        <ul class="page-footer__socials-list social-list">
-          <li class="social-list__item"><a href="#">twitter</a></li>
-          <li class="social-list__item"><a href="#">facebook</a></li>
-          <li class="social-list__item"><a href="#">youtube</a></li>
-        </ul>
-        <div class="page-footer__developer">
-          <span class="page-footer__developed">Разработано</span>
-          <span class="page-footer__developer-logo"><a href="#">htmlacademy logo</a></span>
-        </div>
-      </footer>
+      </section>
     </main>
+    <footer class="page-footer page-footer--index">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="index.html">
+          <svg class="logo-blue logo-pink__blue" xmlns="http://www.w3.org/2000/svg" width="146" height="41">
+            <g class="logo-blue">
+              <path d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.063c0 4.86-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.287-1.289 1.287-.676 0-1.256-.58-1.256-1.287l.002-20.119zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.002zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283a1.29 1.29 0 0 1-1.288 1.287c-.676 0-1.255-.579-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.225.58 1.225 1.256v20.349c0 .677-.48 1.19-1.158 1.19h-.129c-.548 0-.936-.321-1.318-.772l-13.976-17.867v17.449c0 .677-.547 1.257-1.257 1.257-.676 0-1.223-.58-1.223-1.257V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.16c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.936 0 .676-.577 1.288-1.285 1.288-.482 0-.807-.259-1.03-.58l-8.401-10.464-4.863 4.861v4.895a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.006z"/>
+              <path fill="#D22856" d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.742-5.927-5.802-10.531-11.927-10.531s-11.186 4.604-11.927 10.531h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.741 5.926 5.802 10.53 11.927 10.53s11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895 0 1.692-.717 1.426-1.826zm-34.147 1.828c-.715 4.272-4.421 7.531-8.896 7.531s-8.18-3.259-8.896-7.531c-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.715-4.271 4.421-7.531 8.896-7.531s8.18 3.26 8.896 7.531c.082.489.135.988.135 1.5s-.053 1.011-.135 1.5zm25.675 0c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5c.716-4.271 4.421-7.531 8.896-7.531 4.475 0 8.181 3.26 8.896 7.531.082.489.135.988.135 1.5s-.053 1.011-.135 1.5z"/>
+            </g>
+          </svg>
+          <svg class="logo-blue logo-pink__blue logo-pink__blue--desktop" xmlns="http://www.w3.org/2000/svg" width="147" height="41">
+            <g class="logo-blue">
+              <path d="M71.874 18.661c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.146v.064c0 4.861-4.057 7.373-8.854 7.373h-5.475v6.825c0 .708-.58 1.288-1.288 1.288-.676 0-1.256-.58-1.256-1.288v-20.12zm8.114 10.98c3.734 0 6.182-1.996 6.182-4.959v-.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917h5.57v-.001zM93.603 18.5c0-.708.579-1.288 1.255-1.288.709 0 1.288.58 1.288 1.288v20.283a1.29 1.29 0 0 1-1.288 1.287c-.676 0-1.255-.579-1.255-1.287V18.5zM102.744 18.532c0-.676.58-1.256 1.256-1.256h.354c.58 0 .935.29 1.288.74l13.684 17.45V18.468c0-.676.547-1.256 1.256-1.256.676 0 1.224.58 1.224 1.256v20.349c0 .676-.481 1.19-1.158 1.19h-.129c-.548 0-.935-.321-1.319-.772l-13.975-17.868v17.45c0 .676-.547 1.256-1.256 1.256-.676 0-1.223-.58-1.223-1.256V18.532h-.002zM128.173 18.5c0-.708.58-1.288 1.257-1.288.708 0 1.286.58 1.286 1.288v12.331l12.848-13.168c.29-.257.579-.451.998-.451.676 0 1.225.612 1.225 1.256 0 .354-.162.644-.42.901l-7.984 7.92 8.564 10.561c.225.291.354.547.354.935 0 .676-.578 1.288-1.286 1.288-.483 0-.806-.258-1.03-.58l-8.402-10.463-4.863 4.861v4.894a1.29 1.29 0 0 1-1.286 1.288c-.677 0-1.257-.58-1.257-1.288V18.5h-.004z"/>
+              <path d="M98.498 9.875a3.623 3.623 0 0 1-3.623-3.624 3.625 3.625 0 0 1-3.625 3.624 3.625 3.625 0 0 1 3.625 3.624 3.623 3.623 0 0 1 3.623-3.624z"/>
+              <path fill="#d22856" d="M43.094 19.313c.246 0 .489.014.73.033a2.491 2.491 0 0 0-2.136-1.221 1.994 1.994 0 0 1-1.884-1.354c-.727.208-1.425.482-2.089.816.062.017.122.038.188.038a2 2 0 0 1 2 2c0 .096-.015.188-.028.281 1-.382 2.084-.593 3.219-.593z"/>
+              <path fill="#d22856" d="M60.462 28.016L55.287 6.651C54.926 4.303 52.694 0 46.688 0a1.5 1.5 0 1 0 0 3c4.856 0 5.575 3.729 5.639 4.143l4.767 19.701h-2.073c-.445-3.557-2.453-6.628-5.305-8.522a2.503 2.503 0 0 0-1.529 2.303c0 .088-.015.171-.026.256a9.034 9.034 0 0 1 3.829 5.964c.082.489.135.988.135 1.5s-.053 1.012-.135 1.5c-.716 4.272-4.421 7.531-8.896 7.531-4.475 0-8.181-3.259-8.896-7.531-.082-.488-.135-.988-.135-1.5s.053-1.011.135-1.5a8.949 8.949 0 0 1 .808-2.483 1.995 1.995 0 0 1-1.852-1.985.743.743 0 0 0-.192-.489 11.954 11.954 0 0 0-1.795 4.958h-1.82c-.741-5.927-5.802-10.531-11.927-10.531S6.235 20.917 5.493 26.844H3.42L8.187 7.143C8.25 6.729 8.97 3 13.826 3a1.5 1.5 0 1 0 0-3C7.82 0 5.588 4.303 5.227 6.651L.052 28.016c-.266 1.109.531 1.826 1.426 1.826.012 0 .023.004.036.004h3.982c.079.628.215 1.237.387 1.831a.726.726 0 0 0 .102-.354 2 2 0 0 1 2-2c.166 0 .324.025.478.063a8.337 8.337 0 0 1-.074-1.042c0-.512.053-1.011.135-1.5.715-4.271 4.421-7.531 8.896-7.531s8.18 3.26 8.896 7.531c.082.489.135.988.135 1.5s-.053 1.012-.135 1.5c-.715 4.272-4.421 7.531-8.896 7.531a8.959 8.959 0 0 1-5.386-1.794c-.35.302-.8.491-1.299.491a.75.75 0 0 0-.749.748c0 .29-.065.564-.176.812a11.94 11.94 0 0 0 7.614 2.743c6.125 0 11.185-4.604 11.927-10.53h1.814c.742 5.926 5.802 10.53 11.927 10.53s11.186-4.604 11.927-10.53H59c.012 0 .023-.004.036-.004.895.001 1.692-.716 1.426-1.825z"/>
+              <path d="M50.686 16.125a4.499 4.499 0 0 1-4.499-4.499 4.499 4.499 0 0 1-4.499 4.499 4.499 4.499 0 0 1 4.499 4.499 4.498 4.498 0 0 1 4.499-4.499zM37.904 19.626a2.748 2.748 0 0 1-2.749-2.749 2.748 2.748 0 0 1-2.749 2.749 2.747 2.747 0 0 1 2.749 2.749 2.748 2.748 0 0 1 2.749-2.749zM10.734 34.072a2.748 2.748 0 0 1-2.749-2.75c0 1.52-1.23 2.75-2.749 2.75a2.747 2.747 0 0 1 2.749 2.748 2.748 2.748 0 0 1 2.749-2.748z"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <ul class="page-footer__socials-list social-list social-list--photo">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--twitter" href="https://twitter.com/">
+            <span class="visually-hidden">twitter</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="https://ru-ru.facebook.com/">
+            <span class="visually-hidden">facebook</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/">
+            <span class="visually-hidden">youtube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__developer page-footer__developer--photo">
+        <span class="page-footer__developed page-footer__developed--photo">Разработано</span>
+        <a class="page-footer__developer-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">html academy</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="41" height="52" viewBox="0 0 60 60">
+            <path class="page-footer__academy" d="M30.2 5H30L10.3 7.1v36.2L30 55l19.7-11.7V7.1L30.2 5zm17 36.8L30 52 12.8 41.8V27l17.1 10.2V39l-11.7-7v1.8L30 40.9v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8L29.9 12.8 12.8 23V9.4L30 7.6l17.2 1.8V23z"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

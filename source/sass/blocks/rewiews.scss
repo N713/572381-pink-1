@@ -1,6 +1,8 @@
 .reviews {
   display: flex;
   flex-direction: column-reverse;
+  background-color: #ffffff;
+  position: relative;
 }
 
 .reviews__quotes {
@@ -16,10 +18,12 @@
   letter-spacing: normal;
   text-align: center;
   color: #283645;
-  padding: 0 22px;
+  padding: 0 20px;
 }
 
 .reviews__name {
+  margin-top: 40px;
+  margin-bottom: 0;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
@@ -34,7 +38,7 @@
   display: none;
 }
 
-.rewiews__arrows {
+.arrow-button {
   display: none;
 }
 
@@ -44,18 +48,25 @@
 
 @media (min-width: $layout-width-tablet) {
   .reviews {
-    margin-bottom: -1px;
+    margin-bottom: -7px;
     color: #283645;
   }
 
   .reviews__main-review {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .reviews__wrapper {
     order: 3;
+    padding-top: 75px;
     font-size: 18px;
     line-height: 1.67;
   }
 
   .reviews__name {
     margin: 0;
+    margin-top: 17px;
     order: 2;
     font-size: 20px;
     font-weight: bold;
@@ -67,44 +78,55 @@
     text-align: center;
     order: 1;
     margin: 0;
+    margin-top: 2px;
     font-size: 14px;
     line-height: 2.14;
+  }
+
+  .reviews__bullets {
+    margin-top: 35px;
   }
 }
 
 @media (min-width: $layout-width-desktop) {
+  .reviews {
+    padding-bottom: 42px;
+  }
+
   .reviews__quotes {
     display: block;
     margin: 0 auto;
     width: 79px;
     height: 63px;
+    order: 4;
+    margin-top: 72px;
+    margin-bottom: 50px;
   }
 
   .reviews__profession {
     display: block;
     text-align: center;
+    order: 1;
+    font-size: 18px;
+    margin-top: 0;
   }
 
   .reviews__bullets {
     display: none;
   }
-}
-
-@media (min-width: $layout-width-desktop) {
-  .reviews__quotes {
-    order: 4;
-    margin-top: 72px;
-    margin-bottom: 48px;
-  }
 
   .reviews__wrapper {
-    order: 3;
     position: relative;
+    display: flex;
+    justify-content: center;
+    order: 3;
+    padding: 0;
   }
 
   .reviews__main-review {
-    width: 685px;
-    margin: 0 auto;
+    order: 2;
+    width: 690px;
+    margin: 0 106px;
     margin-bottom: 44px;
     padding: 0;
   }
@@ -112,16 +134,13 @@
   .reviews__name {
     order: 2;
     font-size: 24px;
-  }
-
-  .reviews__profession {
-    order: 1;
-    font-size: 18px;
+    margin-top: -10px;
   }
 
   .arrow-button {
     position: absolute;
-    top: 30%;
+    top: 28px;
+    display: block;
     width: 22px;
     height: 41px;
     border: none;
@@ -140,10 +159,12 @@
 
   .arrow-button__right {
     right: 130px;
+    order: 3;
   }
 
   .arrow-button__left {
     left: 130px;
+    order: 1;
   }
 
   .arrow-button__svg {

@@ -1,0 +1,49 @@
+@media (min-width: $layout-width-tablet) {
+  .achievement-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 38px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .achievement-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-bottom: 7px;
+  }
+
+  .achievement-list__item {
+    width: 270px;
+    padding: 0;
+  }
+
+  .achievement-list__item--shark {
+    order: 1;
+  }
+
+  .achievement-list__item--chuck {
+    order: 2;
+    margin-left: 20px;
+  }
+
+  .achievement-list__item--fort {
+    order: 3;
+  }
+
+  .achievement-list__item--burned {
+    order: 4;
+  }
+
+  .achievement-list__item--gifts {
+    order: 5;
+    margin-left: 20px;
+  }
+
+  .achievement-list__item--hotel {
+    order: 6;
+  }
+}

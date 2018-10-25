@@ -5,20 +5,37 @@
   background-repeat: no-repeat;
   background-position: top;
   padding: 0 22px;
-  padding-top: 112px;
-  padding-bottom: 70px;
+  padding-top: 126px;
+  padding-bottom: 40px;
 }
 
 .using-plan__wrapper {
   display: flex;
 }
 
+.using-plan__bullets {
+  margin-top: 42px;
+}
+
 @media (min-width: $layout-width-tablet) {
+  .using-plan {
+    padding: 0 21px;
+    padding-top: 108px;
+    padding-bottom: 70px;
+  }
+
   .using-plan__wrapper {
     display: block;
   }
 
   .using-plan__bullets {
     display: none;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .using-plan {
+    padding-top: 150px;
+    padding-bottom: 95px;
   }
 }

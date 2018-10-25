@@ -1,10 +1,135 @@
 .page-footer {
-  display: block;
+  width: $layout-width-mobile;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-footer__logo {
+  margin-top: 40px;
+}
+
+.page-footer__logo-link {
+  @include marpad;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__developer {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.page-footer__developer-logo {
+  width: 35px;
+}
+
+.page-footer__developed {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.page-footer__academy {
+  fill: #d22856;
+
+  &:focus,
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    fill: #283645;
+    fill-opacity: 0.3;
+  }
+}
+
+.page-footer--index {
+  display: none;
 }
 
 @media (min-width: $layout-width-tablet) {
+  .page-footer--index {
+    display: block;
+  }
+
   .page-footer {
+    width: $layout-width-tablet;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo,
+  .page-footer__developer {
+    margin: 0;
+  }
+
+  .page-footer__logo {
+    margin-top: 36px;
+    margin-bottom: 51px;
+    margin-left: 20px;
+  }
+
+  .page-footer__developer {
+    margin-right: 20px;
+  }
+
+  .page-footer__developed {
+    margin-right: 7px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: $layout-width-desktop) {
+  .page-footer {
+    min-height: 197px;
+    width: auto;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 130px;
+  }
+
+  .page-footer--form {
+    margin-top: -45px;
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .page-footer__developed {
+    font-size: 18px;
+  }
+
+  .page-footer__developed--photo {
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .page-footer__developer {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .page-footer__developer-logo {
+    width: 35px;
   }
 }
