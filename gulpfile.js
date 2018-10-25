@@ -5,6 +5,11 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+/*
+var csso = require("gulp-csso");   консоль ввывела: Plumber found unhandled error:  TypeError in plugin "gulp-csso"
+*/
+var cssmin = require("gulp-cssmin");
+var rename = require("gulp-rename");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -14,6 +19,9 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("source/css"))
+    .pipe(cssmin())
+    .pipe(rename("style-min.css"))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
@@ -32,3 +40,4 @@ gulp.task("server", function () {
 });
 
 gulp.task("start", gulp.series("css", "server"));
+
