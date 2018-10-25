@@ -47,6 +47,7 @@
 }
 
 .photo-list__item--full {
+  flex-basis: $layout-width-mobile;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
@@ -242,6 +243,10 @@
     width: 940px;
     margin-right: 130px;
     margin-left: 130px;
+  }
+
+  .photo-list__item--full {
+    flex-basis: $layout-width-desktop;
   }
 
   .photo-list__link {
