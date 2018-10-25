@@ -63,7 +63,7 @@
   padding: 0;
 }
 
-@media(min-width: $layout-width-tablet) {
+@media (min-width: $layout-width-tablet) {
   .modal {
     width: 464px;
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
@@ -114,7 +114,7 @@
   }
 }
 
-@media(min-width: $layout-width-desktop) {
+@media (min-width: $layout-width-desktop) {
   .modal {
     width: 782px;
   }

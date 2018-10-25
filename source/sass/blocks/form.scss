@@ -137,6 +137,7 @@
 .form__contacts-wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 12px;
 }
 
 .form__number,
@@ -231,6 +232,17 @@
   border: 2px solid #2aab6d;
   border-radius: 2px;
   background-color: #2aab6d;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    border: 2px solid #1c9b5e;
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form__achievements-list,
@@ -315,16 +327,16 @@
   margin-left: -5px;
 }
 
-.form__contacts-wrapper {
-  padding-top: 12px;
-}
-
 .form__applications-list {
   margin-top: -3px;
 }
 
 .application-list__item {
   margin-bottom: 28px;
+}
+
+.form__required-paragraph span {
+  display: none;
 }
 
 @media (min-width: $layout-width-tablet) {
@@ -338,7 +350,7 @@
     margin: 0;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 56px;
+    margin-bottom: 55px;
   }
 
   .form__user-achievements,
@@ -361,15 +373,20 @@
   .form__user-achievements {
     order: 4;
     margin-top: 49px;
+    padding-bottom: 5px;
   }
 
   .form__user-contacts {
     order: 3;
-    margin-top: 49px;
+    margin-top: 55px;
+    padding-bottom: 28px;
   }
 
   .form__user-app {
     order: 2;
+    margin-top: 0;
+    padding-top: 28px;
+    padding-bottom: 19px;
   }
 
   .form__user-emotions {
@@ -423,12 +440,6 @@
     display: block;
   }
 
-  .form__user-app {
-    margin-top: 0;
-    padding-top: 28px;
-    padding-bottom: 19px;
-  }
-
   .form__user-app .form__legend {
     margin-top: 10px;
     padding: 5px 25px;
@@ -440,11 +451,6 @@
 
   .form__applications-list {
     padding-left: 40px;
-  }
-
-  .form__user-contacts {
-    margin-top: 55px;
-    padding-bottom: 28px;
   }
 
   .form__user-contacts legend {
@@ -480,10 +486,6 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-  }
-
-  .form__name {
-    margin-bottom: 55px;
   }
 
   .form__number,
@@ -550,10 +552,6 @@
     margin-right: 15px;
   }
 
-  .form__user-achievements {
-    padding-bottom: 5px;
-  }
-
   .form__user-achievements .form__legend {
     padding: 0 32px;
     padding-top: 9px;
@@ -584,6 +582,8 @@
 
   .form__legend--contact {
     display: block;
+    margin-top: 0;
+    padding: 0 32px;
   }
 
   .form__username {
@@ -641,11 +641,6 @@
     margin-top: 11px;
     margin-left: 17px;
     margin-bottom: 0;
-  }
-
-  .form__legend--contact {
-    margin-top: 0;
-    padding: 0 32px;
   }
 
   .form__user-app {
@@ -715,5 +710,9 @@
 
   .form__required-paragraph {
     margin-right: -5px;
+  }
+
+  .form__required-paragraph span {
+    display: inline;
   }
 }
