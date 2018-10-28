@@ -5,6 +5,7 @@
 }
 
 .page-header__wrapper {
+  position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom 271px right 50%;
 
@@ -74,6 +75,13 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
+  }
+
+  .page-header__logo {
+    position: absolute;
+    z-index: 1;
+    top: 26px;
+    left: 130px;
   }
 
   .page-header__describe {
