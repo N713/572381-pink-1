@@ -16,11 +16,9 @@
 }
 
 .site-list__item--double {
-  display: flex;
-  justify-content: space-between;
+  min-height: 69px;
 
   @include marpad;
-  padding: 23px 20px;
 }
 
 .site-list__toggle {
@@ -79,7 +77,8 @@
   }
 
   .site-list__item--double {
-    padding: 27px 20px 43px 20px;
+    min-height: 111px;
+    padding: 0;
   }
 }
 
@@ -140,6 +139,7 @@
   }
 
   .site-list__item--double {
+    min-height: 0;
     margin-right: 168px;
   }
 }
