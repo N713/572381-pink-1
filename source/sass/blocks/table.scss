@@ -1,7 +1,8 @@
 .table {
-  border-spacing: 2px 0;
+  display: block;
   flex-shrink: 0;
   margin-left: -280px;
+  border-collapse: separate;
 }
 
 .table__cell-paragraph {
@@ -24,13 +25,12 @@
   padding: 7px;
   background-color: #ffffff;
   width: 276px;
-  border: solid 1px #e5e5e5;
   border-radius: 2px;
 }
 
 .table__cell--empty {
   background-color: rgba(0, 0, 0, 0);
-  border: none;
+  border-color: transparent;
   display: none;
 }
 
@@ -38,8 +38,8 @@
   box-sizing: border-box;
   width: 276px;
   position: relative;
-  border: solid 2px #283645;
   background-color: #283645;
+  border: 2px solid #283645;
   border-radius: 2px;
 }
 
@@ -91,6 +91,7 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
+  border-left: none;
 }
 
 .table__item-cost {
@@ -108,6 +109,8 @@
 }
 
 .table__cell--name {
+  position: relative;
+  left: 0;
   padding-left: 14px;
   padding-right: 23px;
   padding-top: 15px;
@@ -132,7 +135,9 @@
 
 @media (min-width: $layout-width-tablet) {
   .table {
-    margin: 0;
+    width: 640px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 
   .table__cell-paragraph {
@@ -156,6 +161,10 @@
   .table__cell--name,
   .table__cell--empty {
     display: block;
+  }
+
+  .table__cell--name {
+    left: 3px;
   }
 
   .table__cell,
@@ -184,6 +193,8 @@
 
 @media (min-width: $layout-width-desktop) {
   .table {
+    width: 940px;
+    box-sizing: border-box;
     margin: 0 auto;
   }
 
@@ -200,6 +211,7 @@
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 19px;
+    left: 3px;
   }
 
   .table__item-name {

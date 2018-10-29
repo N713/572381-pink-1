@@ -1,7 +1,12 @@
 .reviews {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.reviews__main-wrapper {
   display: flex;
   flex-direction: column-reverse;
-  background-color: #ffffff;
   position: relative;
 }
 
@@ -93,6 +98,11 @@
     padding-bottom: 42px;
   }
 
+  .reviews__main-wrapper {
+    width: $layout-width-desktop;
+    margin: 0 auto;
+  }
+
   .reviews__quotes {
     display: block;
     margin: 0 auto;
@@ -158,12 +168,12 @@
   }
 
   .arrow-button__right {
-    right: 130px;
+    right: 10px;
     order: 3;
   }
 
   .arrow-button__left {
-    left: 130px;
+    left: 10px;
     order: 1;
   }
 
