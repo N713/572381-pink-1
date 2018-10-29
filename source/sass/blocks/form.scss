@@ -428,6 +428,8 @@
     font-weight: $font-regular;
     line-height: 30px;
     text-align: center;
+    resize: none;
+    overflow: hidden;
   }
 
   .form__legend {
