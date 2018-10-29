@@ -2,7 +2,7 @@
   position: relative;
 
   @include marpad;
-  margin-top: -70px;
+  margin-top: -40px;
 }
 
 .map::after {
@@ -14,8 +14,7 @@
   height: 62px;
   background-image: url("../img/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .map__iframe {
@@ -26,7 +25,7 @@
 @media (min-width: $layout-width-tablet) {
   .map {
     min-height: 429px;
-    margin-top: -120px;
+    margin-top: -60px;
   }
 
   .map::after {
@@ -35,7 +34,7 @@
   }
 
   .map__iframe {
-    height: 429px;
+    height: 372px;
   }
 }
 

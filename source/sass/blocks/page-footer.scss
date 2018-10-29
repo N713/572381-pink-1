@@ -69,6 +69,7 @@
 @media (min-width: $layout-width-tablet) {
   .page-footer--index {
     display: block;
+    margin-top: -56px;
   }
 
   .page-footer__main-wrapper {
@@ -104,6 +105,10 @@
   .page-footer {
     height: 197px;
     display: flex;
+  }
+
+  .page-footer--index {
+    margin-top: 0;
   }
 
   .page-footer__main-wrapper {
