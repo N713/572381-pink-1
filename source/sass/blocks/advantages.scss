@@ -27,6 +27,7 @@
 @media (min-width: $layout-width-desktop) {
   .advantages {
     padding: 0 130px;
+    background-size: contain;
   }
 
   .advantages__advantages-list {

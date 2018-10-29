@@ -145,10 +145,12 @@
 
 @media (min-width: $layout-width-desktop) {
   .download-section {
+    width: 960px;
+    margin: 0 auto;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     min-height: 645px;
     margin-top: 99px;
-    background-position: right;
+    background-position-x: 25px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
@@ -176,7 +178,7 @@
 
   .download-section__wrapper {
     padding-top: 12px;
-    margin-left: 130px;
+    margin-left: 9px;
   }
 
   .download-section__download {

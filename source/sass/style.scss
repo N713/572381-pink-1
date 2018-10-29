@@ -2,6 +2,7 @@
 @import "blocks/mixin";
 @import "blocks/variables";
 @import "blocks/visually-hidden";
+@import "blocks/wrappers";
 @import "blocks/range";
 @import "blocks/slider";
 
@@ -54,7 +55,7 @@ body {
   background-color: #ffffff;
   margin: 0 auto;
 }
-
+/*
 @media (min-width: $layout-width-mobile) {
   body {
     width: $layout-width-mobile;
@@ -72,7 +73,7 @@ body {
     width: $layout-width-desktop;
   }
 }
-
+*/
 .no-color {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: none;

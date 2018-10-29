@@ -4,6 +4,10 @@
 
 @media (min-width: $layout-width-tablet) {
   .british-scientists {
+    display: block;
+  }
+
+  .british-scientists__main-wrapper {
     display: flex;
     justify-content: space-around;
   }
@@ -97,10 +101,21 @@
 
 @media (min-width: $layout-width-desktop) {
   .british-scientists {
+    display: block;
+    background-color: #f2f2f2;
+
+    @include marpad;
+    margin: 0 auto;
+    padding-bottom: 62px;
+    padding-top: 30px;
+  }
+
+  .british-scientists__main-wrapper {
+    display: flex;
     justify-content: flex-start;
     flex-grow: 0;
-    background-color: #f2f2f2;
-    padding-bottom: 62px;
+    width: 940px;
+    margin: 0 auto;
   }
 
   .british-scientists__head br {
@@ -116,8 +131,7 @@
   }
 
   .british-scientists__image-wrapper {
-    margin-top: 30px;
-    margin-left: 130px;
+    margin: 0;
   }
 
   .british-scientists__image {
@@ -152,7 +166,7 @@
   }
 
   .british-scientists__head {
-    margin-top: 120px;
+    margin-top: 91px;
     margin-left: 70px;
     font-size: 30px;
   }

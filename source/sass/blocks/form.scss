@@ -571,12 +571,12 @@
   .form {
     width: $layout-width-desktop;
     box-sizing: border-box;
-    padding: 0 130px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
+    padding: 0 10px;
     padding-top: 87px;
   }
 
@@ -646,11 +646,19 @@
   .form__user-app {
     order: 2;
     width: 431px;
-    margin-top: -75px;
+    margin-top: -70px;
   }
 
   .form__applications-list {
-    padding-left: 55px;
+    padding-left: 56px;
+    margin-top: 0;
+  }
+
+  .application-list__item:nth-of-type(2) .form__span--radio {
+    margin-top: 2px;
+  }
+
+  .application-list__item:last-child .form__span--radio {
     margin-top: 0;
   }
 
