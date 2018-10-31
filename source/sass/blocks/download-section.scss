@@ -76,6 +76,7 @@
   .download-section {
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: top;
+    background-position-y: bottom;
     min-height: 545px;
 
     @include marpad;
@@ -141,6 +142,7 @@
     min-height: 645px;
     margin-top: 99px;
     background-position-x: 25px;
+    background-position-y: bottom;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
