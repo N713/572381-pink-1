@@ -74,6 +74,7 @@
   margin: 0 20px;
   margin-top: -5px;
   background-color: #f2f2f2;
+  width: 280px;
 }
 
 .photo-list__item-name {
@@ -195,6 +196,7 @@
   .photo-list__paragraph-wrapper {
     position: relative;
     margin-top: 0;
+    width: 620px;
   }
 
   .photo-list__item-paragraph-day {
@@ -261,8 +263,7 @@
 
   .photo-list__paragraph-wrapper {
     width: 940px;
-    margin-right: 130px;
-    margin-left: 130px;
+    margin: 0 auto;
   }
 
   .photo-list__item--full {
